@@ -1,7 +1,7 @@
 body {
 	box-sizing: border-box;
 	margin: 0;
-	color: white;
+	font-color: #160101;
 	font-family: 'Fira Sans', sans-serif;
 }
 
@@ -15,9 +15,11 @@ p {
 	font-size: 20px;
 }
 
+/* MAIN SECTION */
+
 .main {
-	width: 100%;
-	height: 100vw;
+	width: 100vw;
+	height: 100vh;
 	background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
 	url("images/city_image.jpeg");
 /*	background-repeat: no-repeat;*/
@@ -36,6 +38,7 @@ p {
 .mainText {
 	margin-top: 2%;
 	text-align: center;
+	font-color: #ffffff;
 }
 
 .mainText hr {
@@ -43,6 +46,11 @@ p {
 	border: 0; 
 	height: 4px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(254, 252, 252, 0.8), rgba(0, 0, 0, 0));
+    font-color: #ffffff;
+}
+
+.mainText > h1, .mainText > p {
+	color: #ffffff;
 }
 
 .bio {
@@ -50,11 +58,13 @@ p {
 }
 
 .container h1 {
-	margin-top: 10%;
+	margin-top: 17%;
 	margin-bottom: 10px;
 	font-size: 62px;
 	letter-spacing: 7px;
 }
+
+/* NAV BAR */
 
 .navBarContainer {
 	margin-top: 0;
@@ -66,6 +76,57 @@ p {
 
 .aboutRow {
 	font-color: black;
+}
+
+/* PROJECTS */
+
+.projects {
+	background: #F2F2F2;
+}
+
+.sectionTitle {
+	color: black;
+	font-style: bold;
+	margin-left: 10%;
+}
+
+.sectionTitle h2 {
+	margin-top: 0;
+}
+
+.projectContainer {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2%;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background: #e5e3e3;
+}
+
+.projectImage {
+	margin: 3%;
+	width: 60%;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.projectImage img {
+    width: 100%;
+
+}
+
+.projectText {
+	margin-left: 5px;
+	width: 30%;
+}
+
+.projectText h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 38px;
 }
 
 
