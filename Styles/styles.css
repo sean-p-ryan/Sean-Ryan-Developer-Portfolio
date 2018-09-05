@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	font-color: #160101;
 	font-family: 'Fira Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -15,13 +16,19 @@ p {
 	font-size: 20px;
 }
 
+.sectionTitle {
+	color: black;
+	font-style: bold;
+	margin-left: 10%;
+}
+
 /* MAIN SECTION */
 
 .main {
 	width: 100vw;
 	height: 100vh;
 	background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
-	url("images/city_image.jpeg");
+	url("../images/city_image.jpg");
 /*	background-repeat: no-repeat;*/
 	background-size: cover;
 	background-position: center;
@@ -82,33 +89,31 @@ p {
 
 .projects {
 	background: #F2F2F2;
-}
-
-.sectionTitle {
-	color: black;
-	font-style: bold;
-	margin-left: 10%;
+	margin: 0;
 }
 
 .sectionTitle h2 {
-	margin-top: 0;
+	padding-top: 10px;
+	margin: 0;
 }
 
 .projectContainer {
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 2%;
-	background: white;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
-	background: #e5e3e3;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 2%;
+	background: white;
+	background: #fff;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 0 8px 6px -6px black;
 }
 
 .projectImage {
 	margin: 3%;
-	width: 60%;
+	width: 45%;
 	border: 2px solid black;
 	border-radius: 3px;
 }
@@ -119,14 +124,17 @@ p {
 }
 
 .projectText {
-	margin-left: 5px;
-	width: 30%;
+	margin-left: 0px;
+	width: 48%;
+	text-align: right;
+	margin-right: 20px;
 }
 
 .projectText h3 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 38px;
+	font-weight: 800;
 }
 
 

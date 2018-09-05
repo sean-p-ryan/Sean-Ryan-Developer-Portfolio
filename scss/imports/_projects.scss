@@ -1,0 +1,136 @@
+.projects {
+	background: #F2F2F2;
+	margin: 0;
+}
+
+
+
+.sectionTitle h2 {
+		padding-top: 10px;
+		margin: 0;
+}
+
+.projectContainer {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 3%;
+	background: white;
+	background: #fff;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 0 8px 6px -6px black;
+	@media (min-width: $screen-width-sm) {
+	flex-direction: row;
+	align-items: center;
+	}
+}
+
+.projectImage {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	border: 2px solid black;
+	border-radius: 3px;
+	@media (min-width: $screen-width-sm) {
+		margin: 3%;
+		width: 45%;
+	}
+}
+
+.projectImage img {
+    width: 100%;
+
+}
+
+.projectDescription {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+	@media (min-width: $screen-width-sm) {
+		width: 46%;
+	    padding-left: 30px;
+	}
+}
+
+.projectText {
+	width: 100%;
+	text-align: center;
+	padding: 0 35px;
+	font-size: 20px;
+	@media (min-width: $screen-width-sm) {
+		padding-right: 0px;
+		margin-bottom: 30px;
+		width: 100%;
+		text-align: right;
+		font-size: 20px;
+	}
+}
+
+.projectText h3 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 20px;
+		font-weight: 800;
+	@media (min-width: $screen-width-lg) {
+		font-size: 38px;
+	}
+}
+
+.projectText p {
+	font-size: 15px;
+	@media (min-width: $screen-width-lg) {
+		font-size: 22px;
+	}
+}
+
+.techIconContainer {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	@media (min-width: $screen-width-sm) {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+		margin: 20 20 10 0;
+	}
+}
+
+.techIcon {
+	@media (min-width: $screen-width-sm) {
+		margin-right: 0;
+		width: 30px;
+		padding-bottom: 10px;
+	}
+	@media (min-width: $screen-width-lg) {
+		width: 50px;
+	}
+}
+
+ .techIcon > p {
+ 	width: 100%;
+	margin-left: 13px;
+	font-size: 10px;
+ 	@media (min-width: $screen-width-lg) {
+		font-size: 15px;
+	}
+ }
+
+.techIcon > img {
+	margin-left: 9px;
+	@media (min-width: $screen-width-lg) {
+		margin-left: 18px;
+	    width: 100%;
+	}
+}	
+
+
+
+
+
