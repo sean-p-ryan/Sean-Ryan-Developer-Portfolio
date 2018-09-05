@@ -1,0 +1,142 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	font-color: #160101;
+	font-family: 'Fira Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+h1 {
+	letter-spacing: 4px;
+	font-size: 3em;
+	margin-bottom: 0;
+}
+
+p {
+	font-size: 20px;
+}
+
+.sectionTitle {
+	color: black;
+	font-style: bold;
+	margin-left: 10%;
+}
+
+/* MAIN SECTION */
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+	url("../images/city_image.jpg");
+/*	background-repeat: no-repeat;*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-height: 100vh;
+	margin-top: 0;
+	/*overflow-y: hidden;*/
+}
+
+.mainRow {
+	margin-top: 10%;
+}
+
+.mainText {
+	margin-top: 2%;
+	text-align: center;
+	font-color: #ffffff;
+}
+
+.mainText hr {
+	width: 20%;
+	border: 0; 
+	height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(254, 252, 252, 0.8), rgba(0, 0, 0, 0));
+    font-color: #ffffff;
+}
+
+.mainText > h1, .mainText > p {
+	color: #ffffff;
+}
+
+.bio {
+	font-size: 2em;
+}
+
+.container h1 {
+	margin-top: 17%;
+	margin-bottom: 10px;
+	font-size: 62px;
+	letter-spacing: 7px;
+}
+
+/* NAV BAR */
+
+.navBarContainer {
+	margin-top: 0;
+}
+
+.navbar-inverse {
+	margin-bottom: 0px;
+}
+
+.aboutRow {
+	font-color: black;
+}
+
+/* PROJECTS */
+
+.projects {
+	background: #F2F2F2;
+	margin: 0;
+}
+
+.sectionTitle h2 {
+	padding-top: 10px;
+	margin: 0;
+}
+
+.projectContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 2%;
+	background: white;
+	background: #fff;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 0 8px 6px -6px black;
+}
+
+.projectImage {
+	margin: 3%;
+	width: 45%;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.projectImage img {
+    width: 100%;
+
+}
+
+.projectText {
+	margin-left: 0px;
+	width: 48%;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.projectText h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 38px;
+	font-weight: 800;
+}
+
+
+
+
