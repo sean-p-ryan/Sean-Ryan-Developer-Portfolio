@@ -1,0 +1,15 @@
+.parallax {
+	background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+	url(../images/spr_drums.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	height: 800px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
