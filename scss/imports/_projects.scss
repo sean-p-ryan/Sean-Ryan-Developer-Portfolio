@@ -1,20 +1,25 @@
 .projects {
-	background: #F2F2F2;
 	margin: 0;
 }
 
+#projectsSectionTitle {
+	color: $black;
+}
+
 .projectContainer {
+	background: #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	width: 90%;
 	margin-left: 5%;
 	margin-top: 3%;
 	background: white;
-	background: #fff;
-	border: 1px solid white;
+	background: $white;
+	border: 1px solid $gray;
 	border-radius: 5px;
 	box-shadow: 0 8px 6px -6px black;
 	@media (min-width: $screen-width-sm) {
+	margin-bottom: 3%;
 	flex-direction: row;
 	align-items: center;
 	}
@@ -97,28 +102,26 @@
 
 .techIcon {
 	@media (min-width: $screen-width-sm) {
+		justify-content: center;
+		align-items: center;
 		margin-right: 0;
-		width: 30px;
 		padding-bottom: 10px;
 	}
 	@media (min-width: $screen-width-lg) {
-		width: 50px;
+		// width: 50px;
 	}
 }
 
  .techIcon > p {
  	width: 100%;
-	margin-left: 13px;
-	font-size: 10px;
+	font-size: 14px;
  	@media (min-width: $screen-width-lg) {
 		font-size: 15px;
 	}
  }
 
 .techIcon > img {
-	margin-left: 9px;
 	@media (min-width: $screen-width-lg) {
-		margin-left: 18px;
 	    width: 100%;
 	}
 }	

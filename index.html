@@ -7,9 +7,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="Styles/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-	<!-- NAV BAR -->
+
+	<div class="main" id="HOME">
+			<!-- NAV BAR -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container navBarContainer">
 			<div class="navbar-header">
@@ -19,21 +22,20 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">SEAN RYAN</a>
+				<a href="#HOME" class="navbar-brand">SEAN RYAN</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-nav-demo">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 
 		</div>
 	</nav>
 
-	<div class="main">
 		<div class="container">
 			<div class="row mainRow">
 				<div class="col-xs-12 mainText">
@@ -47,9 +49,9 @@
 	</div>
 
 	<!-- PROJECTS -->
-	<div class="projects">	
+	<div class="projects" id="projects">	
 		<div class="sectionTitle">
-			<h2>PROJECTS</h2>
+			<h2 id="projectsSectionTitle">PROJECTS</h2>
 		</div>
 		<div class="projectContainer">
 			<div class="projectImage"><a href="https://sean-p-ryan.github.io/digital-agency-website/" target="_blank">
@@ -83,12 +85,12 @@
 
 		<div class="projectContainer">
 			<div class="projectImage"><a href="https://sean-p-ryan.github.io/digital-agency-website/" target="_blank">
-				<img src="images/steve-huntington-374991-unsplash.jpg" alt="Digital Agency Website"></a>
+				<img src="images/sean-ryan-portfolio-site.png" alt="Digital Agency Website"></a>
 			</div>
 			<div class="projectDescription">
 				<div class="projectText">
-					<h3>Placeholder Project</h3>
-					<p>This is a placeholder. Soon, I will have another example of extraordinary work in this space. Just you wait.</p>
+					<h3>Sean Ryan Developer Portfolio</h3>
+					<p>A mobile-first approach based on Bootstrap, implementing responsive CSS3 techniques like Flexbox and Grid.</p>
 				</div>
 				<div class="techIconContainer">
 					<div class="techIcon">
@@ -114,14 +116,38 @@
 
 	<!-- ABOUT -->
 
-	<div class="about">
+	<div class="about" id="about">
 		<div class="parallax">
-			
+
+			<div class="aboutText">
+				<div class="sectionTitle"><h2>ABOUT</h2></div>
+				<div class="bio"> 
+					<p>I'm a front-end web developer who caught the coding bug while touching up some HTML in my marketing day job. Since then, I've been working on filling my development toolkit with the latest technologies for pushing the boundaries of the web.</p>
+
+					<p>I have an extensive professional background in marketing and content development, so I am just as comfortable talking to humans as I am to computers, which I believe to be an essential skill for any developer.</p>
+
+					<p>When I'm not coding, I'm usually playing drums or guitar in an around Brooklyn with any one of several bands and musical projects I'm involved in.</p>
+				</div>
+			</div>
 		</div>
 
 	</div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- CONTACT -->
+
+	<div class="contact" id="contact">
+		<div class="contactText">
+			<h2 id="contact">GET IN TOUCH</h2>
+			<i class="far fa-envelope" id="fa-envelope"></i>
+			<div class="email"><p>seanpryan89@gmail.com</p></div>		
+			<div class="contactIcons">
+				<a href="https://github.com/sean-p-ryan" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://www.linkedin.com/in/seanryan11/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://www.instagram.com/sean.patrick.ryan/" target="_blank"><i class="fab fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

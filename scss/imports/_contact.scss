@@ -1,0 +1,34 @@
+.contactText {
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+#contact {
+	color: black;
+	text-align: center;
+}
+
+#fa-envelope {
+	font-size: 40px;
+	margin-top: 16px;
+	margin-bottom: 3%px;
+}
+
+.contactIcons {
+	font-size: 40px;
+}
+
+.contactIcons a {
+	color: $black;
+}
+
+
+// #contact h2 {
+	// 	color: $black;
+	// 	padding: 0;
+	// 	margin: 0;
+// }
