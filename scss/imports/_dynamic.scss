@@ -1,0 +1,54 @@
+//Changing project window opacity and adding linked buttons on hover
+
+  .overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.projectImage:hover .overlay {
+	display: block;
+  	background: rgba(0, 0, 0, .7);
+}
+
+.buttonContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1.0;
+}
+
+button {
+	color: $black;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	background: $white;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	width: 100%;
+	height: 35px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.5s opacity 0.5s linear;
+}
+
+.projectImage:hover button{
+	visibility: visible;
+	opacity: 1;
+}
+
+//Changing style of nav bar on scroll event
+
+.navScroll {
+	background-color: $white;
+}
+
+
+
