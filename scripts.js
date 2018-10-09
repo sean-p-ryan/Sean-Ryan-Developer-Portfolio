@@ -1,11 +1,8 @@
-//create variable to store current yOffset
-var scroll = window.pageYOffset;
-var nav = document.querySelector('#navBarMain');
+var navBar = document.querySelector("#navBarMain");
 
-//change styles of navbar if user scrolls below main section
+window.onscroll = function changeClass(){
+	var scrollPosY = window.pageYOffset 
+	if (scrollPosY >= 300) {
 
-if (scroll >= 128){
-	nav.classList.add("navScroll");
-} else {
-	nav.classList.remove("navScroll");
+	}
 }
