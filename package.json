@@ -1,19 +1,26 @@
 {
-  "name": "sean-ryan-developer-portfolio",
+  "name": "pwd",
   "version": "1.0.0",
   "description": "BREAKPOINTS:",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio.git"
   },
-  "author": "",
+  "author": "Sean Ryan",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio/issues"
   },
-  "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme"
+  "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme",
+  "dependencies": {
+    "start-dev": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.1.14"
+  }
 }
