@@ -1,0 +1,19 @@
+{
+  "name": "sean-ryan-developer-portfolio",
+  "version": "1.0.0",
+  "description": "BREAKPOINTS:",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio/issues"
+  },
+  "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme"
+}
