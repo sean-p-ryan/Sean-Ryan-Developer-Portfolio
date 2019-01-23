@@ -1,172 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sean Ryan Web Developer Portfolio</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="Styles/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sean Ryan Web Developer Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main" id="HOME">
+      <!-- NAV BAR -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container navBarContainer">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-nav-demo"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-	<div class="main" id="HOME">
-		<!-- NAV BAR -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="container navBarContainer">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
+          <div class="collapse navbar-collapse" id="bs-nav-demo">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-				<div class="collapse navbar-collapse" id="bs-nav-demo">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
+      <div class="container">
+        <div class="row mainRow">
+          <div class="col-xs-12 mainText">
+            <h1>SEAN RYAN</h1>
+            <hr />
+            <p class="title">FRONT-END WEB DEVELOPER</p>
+            <p class="tagLine">Living &amp Coding in Brooklyn, NY</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			</div>
-		</nav>
+    <!-- PROJECTS -->
+    <div class="projects" id="projects">
+      <div class="sectionTitle">
+        <h2 id="projectsSectionTitle">PROJECTS</h2>
+      </div>
 
-
-
-		<div class="container">
-			<div class="row mainRow">
-				<div class="col-xs-12 mainText">
-					<h1>SEAN RYAN</h1>
-					<hr>
-					<p class="title">FRONT-END WEB DEVELOPER</p>
-					<p class="tagLine">Living &amp Coding in Brooklyn, NY</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- PROJECTS -->
-	<div class="projects" id="projects">	
-		<div class="sectionTitle">
-			<h2 id="projectsSectionTitle">PROJECTS</h2>
-		</div>
-
-
-		<div class="projectContainer">
-			<div class="projectImage" id="rgbGame">
-				<div class="overlay">
-					<div class="buttonContainer">
-						<a href="https://sean-p-ryan.github.io/RGB-Color-Guessing-Game/" target="_blank"><button class="projectBtns">View project</button></a>
-						<a href="https://github.com/sean-p-ryan/RGB-Color-Guessing-Game"><button>Source Code</button></a>
-					</div>
-				</div>
-			</div>
-			<!-- <img src="images/RGB-color-picker.jpg" alt="RGB Color Picker Game"></a> -->
-			
-			<div class="projectDescription">
-				<div class="projectText">
-					<h3>RBG Color Picker</h3>
-					<p>A game in which players are given an RGB color value and must select the color that matches this value.</p>
-				</div>
-				<div class="techIconContainer">
-					<div class="techIcon">
-						<p>HTML5</p>
-						<img src="images/HTML-icon.svg" alt="HTML5 Tech Icon">
-					</div>
-					<div class="techIcon">
-						<p>CSS3</p>
-						<img src="images/CSS-icon.svg" alt="CSS Tech Icon">
-					</div>
-					<div class="techIcon">
-						<p>JavaScript</p>
-						<img src="images/JS-icon.svg" alt="JavaScript Tech Icon">
-					</div>
-				</div>
-			</div>
-		</div>
 			<div class="projectContainer">
-		
-		<div class="projectImage" id="supBrah">
-			<div class="overlay">
-				<div class="buttonContainer">
-					<a href="https://sean-p-ryan.github.io/digital-agency-website/" target="_blank"><button class="projectBtns">View project</button></a>
-					<a href="https://github.com/sean-p-ryan/digital-agency-website" target="_blank"><button>Source Code</button></a>
-				</div>
-			</div>
-		</div>
-		<!-- <img src="images/sup-brah-digital-new.png" alt="Digital Agency Website"> -->
+        <div class="projectImage" id="algoRhythm">
+          <div class="overlay">
+            <div class="buttonContainer">
+              <a
+                href="https://github.com/sean-p-ryan/bloc-jams-react"
+                target="_blank"
+                ><button class="projectBtns">View project</button></a
+              >
+              <a href="https://condescending-noyce-3c47f5.netlify.com/"
+                ><button>Source Code</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!--
+          <img src="images/RGB-color-picker.jpg" alt="RGB Color Picker Game"></a>
+        -->
 
-		<div class="projectDescription">
-			<div class="projectText">
-				<h3>Sup Brah Digital</h3>
-				<p>A website for a made up digital creative agency that wants to be your partner in excellent internetting.</p>
-			</div>
-			<div class="techIconContainer">
-				<div class="techIcon">
-					<p>HTML5</p>
-					<img src="images/HTML-icon.svg" alt="HTML5 tech icon">
-				</div>
-				<div class="techIcon">
-					<p>CSS3</p>
-					<img src="images/CSS-icon.svg" alt="CSS tech icon">
-				</div>
-				<div class="techIcon">
-					<p>SASS</p>
-					<img src="images/SASS-icon.svg" alt="SASS tech icon">
-				</div>
-				<div class="techIcon">
-					<p>JavaScript</p>
-					<img src="images/JS-icon.svg" alt="JavaScript tech icon">
-				</div>
-			</div>
-		</div>
+        <div class="projectDescription">
+          <div class="projectText">
+            <h3>Algo Rhythm</h3>
+            <p>
+              A React-based music streaming service app build as part of the Bloc Web Developer curriculum.
+            </p>
+          </div>
+          <div class="techIconContainer">
+            <div class="techIcon">
+              <p>HTML5</p>
+              <img src="images/HTML-icon.svg" alt="HTML5 Tech Icon" />
+            </div>
+            <div class="techIcon">
+              <p>CSS3</p>
+              <img src="images/CSS-icon.svg" alt="CSS Tech Icon" />
+            </div>
+            <div class="techIcon">
+              <p>JavaScript</p>
+              <img src="images/JS-icon.svg" alt="JavaScript Tech Icon" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-		
-	</div>
-	</div>
+      <div class="projectContainer">
+        <div class="projectImage" id="rgbGame">
+          <div class="overlay">
+            <div class="buttonContainer">
+              <a
+                href="https://sean-p-ryan.github.io/RGB-Color-Guessing-Game/"
+                target="_blank"
+                ><button class="projectBtns">View project</button></a
+              >
+              <a href="https://github.com/sean-p-ryan/RGB-Color-Guessing-Game"
+                ><button>Source Code</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!--
+          <img src="images/RGB-color-picker.jpg" alt="RGB Color Picker Game"></a>
+        -->
 
+        <div class="projectDescription">
+          <div class="projectText">
+            <h3>RBG Color Picker</h3>
+            <p>
+              A game in which players are given an RGB color value and must
+              select the color that matches this value.
+            </p>
+          </div>
+          <div class="techIconContainer">
+            <div class="techIcon">
+              <p>HTML5</p>
+              <img src="images/HTML-icon.svg" alt="HTML5 Tech Icon" />
+            </div>
+            <div class="techIcon">
+              <p>CSS3</p>
+              <img src="images/CSS-icon.svg" alt="CSS Tech Icon" />
+            </div>
+            <div class="techIcon">
+              <p>JavaScript</p>
+              <img src="images/JS-icon.svg" alt="JavaScript Tech Icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projectContainer">
+        <div class="projectImage" id="supBrah">
+          <div class="overlay">
+            <div class="buttonContainer">
+              <a
+                href="https://sean-p-ryan.github.io/digital-agency-website/"
+                target="_blank"
+                ><button class="projectBtns">View project</button></a
+              >
+              <a
+                href="https://github.com/sean-p-ryan/digital-agency-website"
+                target="_blank"
+                ><button>Source Code</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!--
+          <img src="images/sup-brah-digital-new.png" alt="Digital Agency Website">
+        -->
 
+        <div class="projectDescription">
+          <div class="projectText">
+            <h3>Sup Brah Digital</h3>
+            <p>
+              A website for a made up digital creative agency that wants to be
+              your partner in excellent internetting.
+            </p>
+          </div>
+          <div class="techIconContainer">
+            <div class="techIcon">
+              <p>HTML5</p>
+              <img src="images/HTML-icon.svg" alt="HTML5 tech icon" />
+            </div>
+            <div class="techIcon">
+              <p>CSS3</p>
+              <img src="images/CSS-icon.svg" alt="CSS tech icon" />
+            </div>
+            <div class="techIcon">
+              <p>SASS</p>
+              <img src="images/SASS-icon.svg" alt="SASS tech icon" />
+            </div>
+            <div class="techIcon">
+              <p>JavaScript</p>
+              <img src="images/JS-icon.svg" alt="JavaScript tech icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- ABOUT -->
+    <!-- ABOUT -->
 
-	<div class="about" id="about">
-		<div class="parallax">
+    <div class="about" id="about">
+      <div class="parallax">
+        <div class="aboutText">
+          <div class="sectionTitle"><h2>ABOUT</h2></div>
+          <div class="bio">
+            <p>
+              I'm a front-end web developer who caught the coding bug while
+              touching up some HTML in my marketing day job. Since then, I've
+              been working on filling my development toolkit with the latest
+              technologies for pushing the boundaries of the web.
+            </p>
 
-			<div class="aboutText">
-				<div class="sectionTitle"><h2>ABOUT</h2></div>
-				<div class="bio"> 
-					<p>I'm a front-end web developer who caught the coding bug while touching up some HTML in my marketing day job. Since then, I've been working on filling my development toolkit with the latest technologies for pushing the boundaries of the web.</p>
+            <p>
+              I have an extensive professional background in marketing and
+              content development, so I am just as comfortable talking to humans
+              as I am to computers, which I believe to be an essential skill for
+              any developer.
+            </p>
 
-					<p>I have an extensive professional background in marketing and content development, so I am just as comfortable talking to humans as I am to computers, which I believe to be an essential skill for any developer.</p>
+            <p>
+              When I'm not coding, I'm usually playing drums or guitar in an
+              around Brooklyn with any one of several bands and musical projects
+              I'm involved in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT -->
 
-					<p>When I'm not coding, I'm usually playing drums or guitar in an around Brooklyn with any one of several bands and musical projects I'm involved in.</p>
-				</div>
-			</div>
-		</div>
+    <div class="contact" id="contact">
+      <div class="contactText">
+        <h2 id="contact">GET IN TOUCH</h2>
+        <i class="far fa-envelope" id="fa-envelope"></i>
+        <div class="email"><p>seanpryan89@gmail.com</p></div>
+        <div class="contactIcons">
+          <a href="https://github.com/sean-p-ryan" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/seanryan11/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/sean.patrick.ryan/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="scripts.js"></script> -->
 
-	</div>
-	<!-- CONTACT -->
-
-	<div class="contact" id="contact">
-		<div class="contactText">
-			<h2 id="contact">GET IN TOUCH</h2>
-			<i class="far fa-envelope" id="fa-envelope"></i>
-			<div class="email"><p>seanpryan89@gmail.com</p></div>		
-			<div class="contactIcons">
-				<a href="https://github.com/sean-p-ryan" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/seanryan11/" target="_blank"><i class="fab fa-linkedin"></i></a>
-				<a href="https://www.instagram.com/sean.patrick.ryan/" target="_blank"><i class="fab fa-instagram"></i></a>
-			</div>
-		</div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-	</script>
-	<!-- <script src="scripts.js"></script> -->
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
