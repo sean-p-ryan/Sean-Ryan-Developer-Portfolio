@@ -1,33 +1,33 @@
-//reposition hamburger nav 
+//reposition hamburger nav
 
 .navbar-inverse {
-	background-color: #464749;
+  background-color: #334431;
 }
 
 .nav > li {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-	color: #fff;
+  color: #fff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	font-size: 15px;
-	background-color: $black;
-	transition: all 0.8s;
+  font-size: 15px;
+  background-color: #e05038;
+  transition: all 0.8s;
 }
 
 .navbar-toggle {
-	opacity: 1.0;
-	visibility: visible;
-	line-height: 1.455;
+  opacity: 1;
+  visibility: visible;
+  line-height: 1.455;
 }
 
 .navbar-toggle .icon-bar {
-	height: 4px;
+  height: 4px;
 }
 
 .icon-bar {
-	margin-left: 95%;
+  margin-left: 95%;
 }
