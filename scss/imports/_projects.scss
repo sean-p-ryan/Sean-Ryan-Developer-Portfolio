@@ -34,7 +34,13 @@
 
 #algoContainer {
   @media (max-width: $screen-width-md) {
-    height: 630px;
+    height: 600px;
+  }
+}
+
+#rgbContainer {
+  @media (max-width: $screen-width-md) {
+    height: 660px;
   }
 }
 
