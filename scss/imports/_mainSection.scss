@@ -7,14 +7,14 @@
 }
 
 .mainRow {
-  margin-top: 25%;
+  margin-top: 100px;
   @media (min-width: $screen-width-sm) {
-    margin-top: 10%;
+    margin-top: 100px;
   }
 }
 
 .mainText {
-  margin-top: 2%;
+  margin-top: 10px;
   text-align: center;
   color: #334431;
 }
@@ -52,7 +52,7 @@
 }
 
 .container h1 {
-  margin-top: 17%;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 45px;
   letter-spacing: 7px;
