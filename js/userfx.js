@@ -75,3 +75,17 @@ window.addEventListener("scroll", function(e){
     addUnderlineOnScroll(activeNavItem, scrollPos);
   }
 })
+
+//add transition to nav bar on scrollPos
+window.addEventListener("scroll", function(e){
+  let navBarText = document.querySelector("#bs-nav-demo");
+  let navBar = document.querySelector(".navbar-inverse");
+  let scrollPos = pageYOffset;
+  if (scrollPos > 316){
+    navBarText.style.marginTop = "0px";
+    navBar.style.height = "105px";
+  } else {
+    navBarText.style.marginTop = "30px";
+    navBar.style.height = "140px";
+  }
+});
