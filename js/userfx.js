@@ -1,11 +1,30 @@
-var headshot = document.querySelector(".headshot-image");
+var seanRyan = document.querySelector("#sean-ryan");
+var about = document.querySelector("#about-link");
+var projects = document.querySelector("#projects-link");
+var contact = document.querySelector("#contact-link");
 
-headshot.addEventListener("mouseenter", e => {
-  e.target.classList.add("headshot-image-hover");
-  e.target.innerText = "You look fantastic today!"
-})
+var navItems = document.querySelectorAll(".nav-item")
 
-headshot.addEventListener("mouseout", e => {
-  e.target.classList.remove("headshot-image-hover");
-  e.target.innerHTML = "";
-})
+
+var active = seanRyan;
+var prev = null;
+
+document.addEventListener("click", function(e) {
+  // console.log(e.target);
+  if (e.target.matches(".nav-item")){
+    navItems.forEach(function(element, index){
+      console.log(element);
+      if (element.matches("#sean-ryan")){
+        element.classList.remove("text-highlight-blue")
+      } else {
+        element.classList.remove("text-highlight-blue-li");
+      }
+      console.log(e.target)
+      if (e.target.matches("#sean-ryan")){
+        e.target.classList.add("text-highlight-blue");
+      } else {
+        e.target.classList.add("text-highlight-blue-li");
+      }
+    })
+    }
+  }, false)
