@@ -25,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
-    <div class="main" id="HOME">
+    <div class="main" id="home">
       <!-- NAV BAR -->
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container navBarContainer">
@@ -45,12 +45,14 @@
 
           <div class="collapse navbar-collapse" id="bs-nav-demo">
             <div class="nav-home">
-              <h1 id="sean-ryan" class="nav-item text-highlight-blue">Sean Ryan</h1>
+              <a href="#home">
+                <h1 id="sean-ryan" class="nav-item text-highlight-blue">Sean Ryan</h1>
+              </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#projects" class="nav-item" >Projects</a></li>
-              <li><a href="#about" class="nav-item">About</a></li>
-              <li><a href="#contact" class="nav-item">Contact</a></li>
+              <li><a href="#projects-jump-link" class="nav-item" id="projects">Projects</a></li>
+              <li><a href="#about-jump-link" class="nav-item" id="about">About</a></li>
+              <li><a href="#contact-jump-link" class="nav-item" id="contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -74,7 +76,7 @@
     </div>
 
     <!-- PROJECTS -->
-    <div class="projects" id="projects">
+    <div class="projects" id="projects-jump-link">
       <div class="sectionTitle">
         <h2 id="projectsSectionTitle">PROJECTS</h2>
       </div>
@@ -146,7 +148,7 @@
 
     <!-- ABOUT -->
 
-    <div class="about" id="about">
+    <div class="about" id="about-jump-link">
       <div class="parallax">
         <div class="aboutText">
           <div class="sectionTitle"><h2>ABOUT</h2></div>
@@ -176,9 +178,9 @@
     </div>
     <!-- CONTACT -->
 
-    <div class="contact" id="contact">
+    <div class="contact" id="contact-jump-link">
       <div class="contactText">
-        <h2 id="contact">GET IN TOUCH</h2>
+        <h2 id="contact-text">GET IN TOUCH</h2>
         <i class="far fa-envelope" id="fa-envelope"></i>
         <div class="email"><p>seanpryan89@gmail.com</p></div>
         <div class="contactIcons">
