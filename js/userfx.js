@@ -1,4 +1,4 @@
-var navItems = document.querySelectorAll(".nav-item")
+var navItems = document.querySelectorAll(".nav-item");
 var activeNavItem = null;
 //individual nav items
 var seanRyan = document.querySelector("#sean-ryan");
@@ -18,53 +18,57 @@ const removeUnderlineFromSr = () => {
 };
 
 //add or remove blue underline to or from nav item
-const addUnderlineToNavItem = (item) => {
+const addUnderlineToNavItem = item => {
   item.classList.add("text-highlight-blue-li");
   activeNavItem = item;
-}
+};
 
-const removeUnderlineFromNavItem = (item) => {
+const removeUnderlineFromNavItem = item => {
   item.classList.remove("text-highlight-blue-li");
-}
+};
 
 //listen for nav bar item click
-document.addEventListener("click", function(e) {
-  if (e.target.matches(".nav-item")){
-    navItems.forEach(function(element){
-      if (element.matches("#sean-ryan")){
-        removeUnderlineFromSr(e.target);
-      } else {
-        removeUnderlineFromNavItem(element);
-      }
-      if (e.target.matches("#sean-ryan")){
-        addUnderlineToSr(e.target);
-      } else {
-        addUnderlineToNavItem(e.target);
-      }
-    })
+document.addEventListener(
+  "click",
+  function(e) {
+    if (e.target.matches(".nav-item")) {
+      navItems.forEach(function(element) {
+        if (element.matches("#sean-ryan")) {
+          removeUnderlineFromSr(e.target);
+        } else {
+          removeUnderlineFromNavItem(element);
+        }
+        if (e.target.matches("#sean-ryan")) {
+          addUnderlineToSr(e.target);
+        } else {
+          addUnderlineToNavItem(e.target);
+        }
+      });
     }
-  }, false)
+  },
+  false
+);
 
 const addUnderlineOnScroll = (active, scrollPos) => {
   removeUnderlineFromSr();
-  navItems.forEach((element) => {
+  navItems.forEach(element => {
     removeUnderlineFromNavItem(element);
-    if (scrollPos <= 316){
+    if (scrollPos <= 316) {
       addUnderlineToSr();
-    } else if (element = active){
+    } else if ((element = active)) {
       addUnderlineToNavItem(active);
     }
   });
 };
 
 //add blue underline to nav items on scroll
-window.addEventListener("scroll", function(e){
+window.addEventListener("scroll", function(e) {
   let scrollPos = pageYOffset;
-  if (scrollPos <= 315){
+  if (scrollPos <= 315) {
     activeNavItem = home;
-    console.log(activeNavItem)
+    console.log(activeNavItem);
     addUnderlineOnScroll(activeNavItem, scrollPos);
-  } else if (scrollPos >= 316 && scrollPos <= 1233){
+  } else if (scrollPos >= 316 && scrollPos <= 1233) {
     activeNavItem = projects;
     addUnderlineOnScroll(activeNavItem, scrollPos);
   } else if (scrollPos >= 1234 && scrollPos <= 1937) {
@@ -74,14 +78,14 @@ window.addEventListener("scroll", function(e){
     activeNavItem = contact;
     addUnderlineOnScroll(activeNavItem, scrollPos);
   }
-})
+});
 
 //add transition to nav bar on scrollPos
-window.addEventListener("scroll", function(e){
+window.addEventListener("scroll", function(e) {
   let navBarText = document.querySelector("#bs-nav-demo");
   let navBar = document.querySelector(".navbar-inverse");
   let scrollPos = pageYOffset;
-  if (scrollPos > 316){
+  if (scrollPos > 316) {
     navBarText.style.marginTop = "0px";
     navBar.style.height = "105px";
   } else {
