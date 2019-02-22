@@ -63,21 +63,24 @@ const addUnderlineOnScroll = (active, scrollPos) => {
 
 //add blue underline to nav items on scroll
 window.addEventListener("scroll", function(e) {
-  let scrollPos = pageYOffset;
-  if (scrollPos <= 315) {
-    activeNavItem = home;
-    console.log(activeNavItem);
-    addUnderlineOnScroll(activeNavItem, scrollPos);
-  } else if (scrollPos >= 316 && scrollPos <= 1233) {
-    activeNavItem = projects;
-    addUnderlineOnScroll(activeNavItem, scrollPos);
-  } else if (scrollPos >= 1234 && scrollPos <= 1937) {
-    activeNavItem = about;
-    addUnderlineOnScroll(activeNavItem, scrollPos);
-  } else if (scrollPos >= 1938) {
-    activeNavItem = contact;
-    addUnderlineOnScroll(activeNavItem, scrollPos);
-  }
+  var mq = window.matchMedia( "(min-width: 500px)" );
+  if (mq.matches){
+    let scrollPos = pageYOffset;
+      if (scrollPos <= 315) {
+        activeNavItem = home;
+        console.log(activeNavItem);
+        addUnderlineOnScroll(activeNavItem, scrollPos);
+      } else if (scrollPos >= 316 && scrollPos <= 1233) {
+        activeNavItem = projects;
+        addUnderlineOnScroll(activeNavItem, scrollPos);
+      } else if (scrollPos >= 1234 && scrollPos <= 1937) {
+        activeNavItem = about;
+        addUnderlineOnScroll(activeNavItem, scrollPos);
+      } else if (scrollPos >= 1938) {
+        activeNavItem = contact;
+        addUnderlineOnScroll(activeNavItem, scrollPos);
+    }
+};
 });
 
 //add transition to nav bar on scrollPos
@@ -87,9 +90,26 @@ window.addEventListener("scroll", function(e) {
   let scrollPos = pageYOffset;
   if (scrollPos > 316) {
     navBarText.style.marginTop = "0px";
-    navBar.style.height = "105px";
+    navBar.style.height = "100px";
   } else {
     navBarText.style.marginTop = "30px";
     navBar.style.height = "140px";
+  }
+});
+
+//increase/decrease height of mobile nav container on hamburger click
+var expanded = false;
+var mobileNavBackground = document.querySelector(".navbar-inverse");
+
+window.addEventListener("click", function(e) {
+  var hamburger = document.querySelector(".navbar-toggle");
+  if (e.target = hamburger && expanded != true){
+    console.log("make it bigger");
+    mobileNavBackground.style.height = "100vh"
+    expanded = true;
+  } else if (e.target = hamburger && expanded != false){
+    console.log("make it smaller")
+    mobileNavBackground.style.height = "140px"
+    expanded = false;
   }
 });
