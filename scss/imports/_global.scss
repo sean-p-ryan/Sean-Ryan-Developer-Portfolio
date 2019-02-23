@@ -24,6 +24,11 @@ h1:hover {
 
 h2 {
   color: $black-lpc;
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 28px;
 }
 
 p {
@@ -32,6 +37,20 @@ p {
 
 a {
   text-decoration: none;
+  color: $black-lpc;
+}
+
+button {
+	color: $black;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	background: $white-lpc;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	width: 130px;
+	height: 45px;
+  margin: 25px 5px;
 }
 
 .sectionTitle {

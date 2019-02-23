@@ -5,29 +5,34 @@
   align-items: center;
   justify-content: center;
   background: $white-lpc;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .projectContainer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 1%;
-  width: 83%;
-  height: 530px;
+  width: 90%;
+  height: auto;
   border-top: 1px solid $blue-lpc;
   @media (min-width: $screen-width-sm) {
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 390px;
+    margin-bottom: 20px;
+    width: 83%;
   }
 }
 
 #algoContainer {
   @media (max-width: $screen-width-sm) {
-    height: 545px;
+    // height: 700px;
   }
 }
 
 #rgbContainer {
+  height: 700px;
   @media (max-width: $screen-width-sm) {
     height: 640px;
   }
@@ -39,7 +44,6 @@
   padding-top: 20px;
   @media (min-width: $screen-width-sm) {
     flex-direction: row;
-    margin: 24px;
     height: 70%;
     width: 100%;
   }
@@ -55,11 +59,10 @@
   border-radius: 5px;
   @media (min-width: $screen-width-sm) {
     overflow: hidden;
-    height: 300px;
+    height: 350px;
     width: 500px;
     border: 2px solid black;
     border-radius: 3px;
-    margin-left: 30px;
   }
 }
 
@@ -74,11 +77,10 @@
 .projectDescription {
   margin: 0 auto;
   @media (min-width: $screen-width-sm) {
-    width: 600px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 20px;
     margin-left: 20px;
   }
   p {
@@ -96,46 +98,17 @@
   font-size: 15px;
 }
 
-.techIconContainer {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 47px 20px 10px 0px;
-  @media (min-width: $screen-width-sm) {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+.buttonContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	width: 100%;
 }
 
-.techIcon {
-  @media (min-width: $screen-width-sm) {
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
-    padding-bottom: 10px;
-    width: 7vw;
-  }
-  img {
-    @media (min-width: $screen-width-lg) {
-      max-height: 75px;
-    }
-  }
-}
-
-.techIcon > p {
-  width: 100%;
-  font-size: 14px;
-  text-align: center;
-  @media (min-width: $screen-width-lg) {
-    font-size: 15px;
-  }
-}
-
-.techIcon > img {
-  width: 100%;
+.view-project .source-code{
+  color: black;
+  display: block;
+  background-color: black;
 }

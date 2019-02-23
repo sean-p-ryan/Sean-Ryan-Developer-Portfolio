@@ -109,7 +109,7 @@ document.addEventListener("click", function(e) {
       console.log(fullScreenNav);
       fullScreenNav = true;
     } else if ((e.target.matches(".navbar-toggle")) && fullScreenNav === true){
-      mobileNavBackground.style.height = "140px"
+      mobileNavBackground.style.height = "120px"
       fullScreenNav = false;
     }
 });

@@ -21,25 +21,64 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main" id="home">
       <!-- NAV BAR -->
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container navBarContainer">
-
-            <div class="collapse navbar-collapse" id="bs-nav-demo">
+          <div class="collapse navbar-collapse" id="bs-nav-demo">
             <div class="nav-home">
               <a href="#home">
-                <h1 id="sean-ryan" data-toggle="collapse" data-target=".navbar-collapse" class="nav-item text-highlight-blue">Sean Ryan</h1>
+                <h1
+                  id="sean-ryan"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  class="nav-item text-highlight-blue"
+                >
+                  Sean Ryan
+                </h1>
               </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-              <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#projects-jump-link" class="nav-item" id="projects">Projects</a></li>
-              <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#about-jump-link" class="nav-item" id="about">About</a></li>
-              <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#contact-jump-link" class="nav-item" id="contact">Contact</a></li>
+              <li>
+                <a
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  href="#projects-jump-link"
+                  class="nav-item"
+                  id="projects"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  href="#about-jump-link"
+                  class="nav-item"
+                  id="about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  href="#contact-jump-link"
+                  class="nav-item"
+                  id="contact"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="navbar-header">
@@ -52,8 +91,7 @@
               class="pull-right"
             >
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
           </div>
@@ -61,19 +99,21 @@
       </nav>
 
       <div class="landing-body">
-          <div class="tagline">
-            <p> Web developer focused <br />
-              on React & JavaScript. <br />
-              Living & coding in Brooklyn.</p>
-          </div>
-          <div class="homeIcons">
-            <a href="https://github.com/sean-p-ryan" target="_blank"
-              ><i class="fab fa-github" id="homeIconGithub"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/seanryan11/" target="_blank"
-              ><i class="fab fa-linkedin" id="homeIconLinkedIn"></i
-            ></a>
-          </div>
+        <div class="tagline">
+          <p>
+            Web developer focused <br />
+            on React & JavaScript. <br />
+            Living & coding in Brooklyn.
+          </p>
+        </div>
+        <div class="homeIcons">
+          <a href="https://github.com/sean-p-ryan" target="_blank"
+            ><i class="fab fa-github" id="homeIconGithub"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/seanryan11/" target="_blank"
+            ><i class="fab fa-linkedin" id="homeIconLinkedIn"></i
+          ></a>
+        </div>
       </div>
     </div>
 
@@ -85,66 +125,74 @@
 
       <div class="projectContainer" id="algoContainer">
         <div class="image-and-description">
-        <div class="projectImage" id="algoRhythm">
-          <div class="overlay">
+          <div class="projectImage" id="algoRhythm"></div>
+
+          <div class="projectDescription">
+            <div class="projectText">
+              <h3>Algo Rhythm</h3>
+              <p>
+                A single page application allowing the user to play audio files
+                using interactive scroll bars and volume controls. React powers
+                the frontend layout and interactivity, and React Router enables
+                state-based routing. Built as part of the Bloc Web Development
+                curriculum.
+              </p>
+            </div>
             <div class="buttonContainer">
-              <a
+              <button>
+              <a class="view-project"
                 href="https://condescending-noyce-3c47f5.netlify.com/"
                 target="_blank"
-                ><button class="projectBtns">View project</button></a
+                >View project</a
               >
-              <a
+              </button>
+              <button>
+              <a class="source-code"
                 href="https://github.com/sean-p-ryan/bloc-jams-react"
                 target="_blank"
-                ><button>Source Code</button></a
-              >
+                >Source Code</a>
+                </button>
             </div>
           </div>
         </div>
-
-        <div class="projectDescription">
-          <div class="projectText">
-            <h3>Algo Rhythm</h3>
-            <p>
-              A single page application allowing the user to play audio files using interactive scroll bars and volume controls. React powers the frontend layout and interactivity, and React Router enables state-based routing. Built as part of the Bloc Web Development curriculum.
-            </p>
-          </div>
-        </div>
-      </div>
       </div>
 
       <div class="projectContainer" id="rgbContainer">
         <div class="image-and-description">
-        <div class="projectImage" id="rgbGame">
-          <div class="overlay">
+          <div class="projectImage" id="rgbGame">
+          </div>
+
+          <div class="projectDescription">
+            <div class="projectText">
+              <h3>RBG Color Picker</h3>
+              <p>
+                The user is given an RGB color value and must select one of
+                three colors that matches this value. "Easy" and "hard" modes
+                present the user with 3 and 6 possible color choices,
+                respectively. Built with plain JS and styled with CSS, this
+                simple app packs a lot of functionality into not a lot of code.
+                Based on a Colt Steel Web Development Bootcamp project.
+              </p>
+            </div>
             <div class="buttonContainer">
+              <button class="projectBtns">
               <a
-                href="https://sean-p-ryan.github.io/RGB-Color-Guessing-Game/"
+                href="https://condescending-noyce-3c47f5.netlify.com/"
                 target="_blank"
-                ><button class="projectBtns">View project</button></a
+                >View project</a
               >
-              <a href="https://github.com/sean-p-ryan/RGB-Color-Guessing-Game"
-                ><button>Source Code</button></a
+              </button>
+              <button>
+              <a
+                href="https://github.com/sean-p-ryan/bloc-jams-react"
+
+                target="_blank"
+                >Source Code</a
               >
+              </button>
             </div>
           </div>
         </div>
-
-        <div class="projectDescription">
-          <div class="projectText">
-            <h3>RBG Color Picker</h3>
-            <p>
-              The user is given an RGB color value and must
-              select one of three colors that matches this value. "Easy" and "hard"
-              modes present the user with 3 and 6 possible color choices, respectively.
-              Built with plain JS and styled with CSS, this simple app packs a lot of functionality
-              into not a lot of code. Based on a Colt Steel Web Development Bootcamp project.
-            </p>
-          </div>
-        </div>
-        </div>
-      </div>
-
       </div>
     </div>
 
@@ -156,10 +204,10 @@
           <div class="sectionTitle"><h2>ABOUT</h2></div>
           <div class="bio">
             <p>
-              I'm a web developer who caught the coding bug while
-              touching up some HTML in my marketing day job. Since then, I've
-              been working on filling my development toolkit with the latest
-              technologies for pushing the boundaries of the web.
+              I'm a web developer who caught the coding bug while touching up
+              some HTML in my marketing day job. Since then, I've been working
+              on filling my development toolkit with the latest technologies for
+              pushing the boundaries of the web.
             </p>
 
             <p>
