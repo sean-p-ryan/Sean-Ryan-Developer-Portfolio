@@ -18,6 +18,24 @@
     width: 20px;
   }
 
+  .navbar-inverse .navbar-toggle{
+    border: none;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar-toggle.collapsed{
+    background: red;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+  }
+
+  // .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+  //     background-color: inherit;
+  //   }
+
   #bs-nav-demo {
     width: 97%;
   }
@@ -26,9 +44,6 @@
     display: none !important;
   }
 
-  // .navbar-inverse{
-  //   height: 228px;
-  // }
   .navbar-nav {
     float: none !important;
     margin: 7.5px -15px;

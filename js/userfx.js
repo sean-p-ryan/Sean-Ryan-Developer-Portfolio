@@ -1,5 +1,9 @@
+//selects all elements in nav bar
 var navItems = document.querySelectorAll(".nav-item");
+//item in nav bar with blue underline
 var activeNavItem = null;
+//whether nav bar background is full screen
+var fullScreenNav = false;
 //individual nav items
 var seanRyan = document.querySelector("#sean-ryan");
 var home = document.querySelector("#home");
@@ -98,18 +102,14 @@ window.addEventListener("scroll", function(e) {
 });
 
 //increase/decrease height of mobile nav container on hamburger click
-var expanded = false;
-var mobileNavBackground = document.querySelector(".navbar-inverse");
-
-window.addEventListener("click", function(e) {
-  var hamburger = document.querySelector(".navbar-toggle");
-  if (e.target = hamburger && expanded != true){
-    console.log("make it bigger");
-    mobileNavBackground.style.height = "100vh"
-    expanded = true;
-  } else if (e.target = hamburger && expanded != false){
-    console.log("make it smaller")
-    mobileNavBackground.style.height = "140px"
-    expanded = false;
-  }
+document.addEventListener("click", function(e) {
+  var mobileNavBackground = document.querySelector(".navbar-inverse");
+    if ((e.target.matches(".navbar-toggle")) && fullScreenNav === false){
+      mobileNavBackground.style.height = "100vh";
+      console.log(fullScreenNav);
+      fullScreenNav = true;
+    } else if ((e.target.matches(".navbar-toggle")) && fullScreenNav === true){
+      mobileNavBackground.style.height = "140px"
+      fullScreenNav = false;
+    }
 });
