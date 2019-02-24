@@ -9,6 +9,11 @@
   padding-right: 8%;
 }
 
+#projectsSectionTitle {
+  color: $black-lpc;
+  margin: 20px 0px;;
+}
+
 .projectContainer {
   flex-direction: column;
   align-items: center;
@@ -33,8 +38,8 @@
 
 #rgbContainer {
   height: 700px;
-  @media (max-width: $screen-width-sm) {
-    height: 640px;
+  @media (min-width: $screen-width-sm) {
+    height: 550px;
   }
 }
 
@@ -94,9 +99,9 @@
   text-transform: uppercase;
 }
 
-.projectText p {
-  font-size: 15px;
-}
+// .projectText p {
+//   font-size: 15px;
+// }
 
 .buttonContainer {
 	display: flex;
