@@ -1,8 +1,10 @@
 .about p, h2 {
 	color: $white-lpc;
-	margin-bottom: 3%;
-	margin-left: 10%;
-	margin-right: 10%;
+	@media (min-width: $screen-width-sm){
+		margin-bottom: 3%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
 }
 
 .about h2 {
