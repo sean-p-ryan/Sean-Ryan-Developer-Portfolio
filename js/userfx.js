@@ -70,17 +70,17 @@ window.addEventListener("scroll", function(e) {
   var mq = window.matchMedia( "(min-width: 500px)" );
   if (mq.matches){
     let scrollPos = pageYOffset;
-      if (scrollPos <= 315) {
+      if (scrollPos <= 496) {
         activeNavItem = home;
         console.log(activeNavItem);
         addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 316 && scrollPos <= 1233) {
+      } else if (scrollPos >= 497 && scrollPos <= 1640) {
         activeNavItem = projects;
         addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 1234 && scrollPos <= 1937) {
+      } else if (scrollPos >= 1641 && scrollPos <= 2268) {
         activeNavItem = about;
         addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 1938) {
+      } else if (scrollPos >= 2269) {
         activeNavItem = contact;
         addUnderlineOnScroll(activeNavItem, scrollPos);
     }
@@ -103,13 +103,12 @@ window.addEventListener("scroll", function(e) {
 
 //increase/decrease height of mobile nav container on hamburger click
 document.addEventListener("click", function(e) {
-  var mobileNavBackground = document.querySelector(".navbar-inverse");
-    if ((e.target.matches(".navbar-toggle")) && fullScreenNav === false){
-      mobileNavBackground.style.height = "100vh";
-      console.log(fullScreenNav);
-      fullScreenNav = true;
-    } else if ((e.target.matches(".navbar-toggle")) && fullScreenNav === true){
-      mobileNavBackground.style.height = "120px"
-      fullScreenNav = false;
-    }
+    var mobileNavBackground = document.querySelector(".navbar-inverse");
+      if (e.target.matches(".fas") && fullScreenNav === false){
+        mobileNavBackground.style.height = "100vh";
+        fullScreenNav = true;
+      } else if (e.target.matches(".fas") && fullScreenNav === true){
+        mobileNavBackground.style.height = "120px";
+        fullScreenNav = false;
+      }
 });
