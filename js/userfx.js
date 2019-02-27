@@ -31,7 +31,7 @@ const removeUnderlineFromNavItem = item => {
   item.classList.remove("text-highlight-blue-li");
 };
 
-//listen for nav bar item click
+// listen for nav bar item click
 document.addEventListener(
   "click",
   function(e) {
