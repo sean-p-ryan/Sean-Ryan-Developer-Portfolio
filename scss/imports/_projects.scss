@@ -24,7 +24,6 @@
   @media (min-width: $screen-width-sm) {
     display: flex;
     flex-direction: column;
-    height: 390px;
     margin-bottom: 20px;
     width: 83%;
   }
@@ -41,6 +40,10 @@
   @media (min-width: $screen-width-sm) {
     height: 550px;
   }
+}
+
+#rgb-buttons {
+  margin-top: 27spx;
 }
 
 .image-and-description {
@@ -99,16 +102,11 @@
   text-transform: uppercase;
 }
 
-// .projectText p {
-//   font-size: 15px;
-// }
-
 .buttonContainer {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	margin: 0;
 	width: 100%;
 }
 

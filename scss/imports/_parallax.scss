@@ -1,17 +1,19 @@
-.parallax {
-	background-color: $blue-lpc;
-	background-attachment: fixed;
-	background-position: center;
-  background-repeat: no-repeat;
-	height: 700px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-		@media (min-width: $screen-width-sm) {
-		height: 1200px;
-		background-image: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) ),
-	    url(../images/new_sean_drums.jpg);
-		background-position: top;
-		background-size: cover;
+@media (min-width: $screen-width-sm){
+	.parallax {
+		background-color: $blue-lpc;
+		background-attachment: fixed;
+		background-position: center;
+	  background-repeat: no-repeat;
+		height: 550px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+			@media (min-width: $screen-width-sm) {
+			height: 550px;
+			background-image: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) ),
+		    url(../images/new_sean_drums.jpg);
+			background-position: top;
+			background-size: cover;
+		}
 	}
 }

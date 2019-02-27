@@ -1,3 +1,10 @@
+.about {
+	margin-top: 150px;
+	@media (min-width: $screen-width-sm) {
+		margin-top: none;
+	}
+}
+
 .about p, h2 {
 	color: $white-lpc;
 	@media (min-width: $screen-width-sm){
@@ -8,16 +15,22 @@
 }
 
 .about h2 {
-	border-bottom: 2px solid $blue-lpc;
-	padding-bottom: 15px;
-	margin-bottom: 30px;
+	margin-bottom: none;
+	margin-top: 30px;
+	@media (max-width: $screen-width-sm){
+		border-bottom: 2px solid $blue-lpc;
+		padding-bottom: 15px;
+		margin-bottom: 30px;
+	}
 }
 
 .bio {
-	width: 40%;
-	margin-left: 100px;
-}
-
-.aboutText {
-	padding-bottom: 130px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: $blue-lpc;
+	@media (min-width: $screen-width-sm){
+		width: 40%;
+		margin-left: 100px;
+		background-color: inherit;
+	}
 }
