@@ -3,14 +3,6 @@
   height: 100vh;
 }
 
-#mobile-name {
-  width: 200px;
-  margin: 50px auto;
-  @media (min-width: $screen-width-sm){
-    display: none;
-  }
-}
-
 .landing-body {
   background-color: $white-lpc;
   display: block;

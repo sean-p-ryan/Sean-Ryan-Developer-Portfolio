@@ -65,7 +65,7 @@ const addUnderlineOnScroll = (active, scrollPos) => {
   });
 };
 
-//add blue underline to nav items on scroll
+// add blue underline to nav items on scroll
 window.addEventListener("scroll", function(e) {
   var mq = window.matchMedia( "(min-width: 500px)" );
   if (mq.matches){
@@ -103,7 +103,7 @@ window.addEventListener("scroll", function(e) {
 
 //increase/decrease height of mobile nav container on hamburger click
 document.addEventListener("click", function(e) {
-    var mobileNavBackground = document.querySelector(".navbar-inverse");
+    var mobileNavBackground = document.querySelector(".navbar-wrapper");
       if (e.target.matches(".fas") && fullScreenNav === false){
         mobileNavBackground.style.height = "100vh";
         fullScreenNav = true;
