@@ -52,5 +52,9 @@
 .nav-ul > li {
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin: 30px auto;
+  margin-top: 2rem;
+  margin-left: 5%;
+  @media(min-width: $screen-width-md){
+    margin: 30px auto;
+  };
 }
