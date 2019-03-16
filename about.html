@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sean Ryan</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="Styles/main.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Fira+Sans"
@@ -21,79 +15,87 @@
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="main" id="HOME">
+    <div class="main" id="home">
       <!-- NAV BAR -->
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container navBarContainer">
+      <nav class="navbar navbar-wrapper">
+        <div class="nav-bar-container">
+            <div class="inner-nav-wrapper">
+              <div class="nav-home">
+                <a href="./index.html">
+                  <h1
+                    id="sean-ryan"
+                    class="nav-item text-highlight-blue mobile-nav"
+                  >
+                    Sean Ryan
+                  </h1>
+                </a>
+              </div>
+              <ul class="nav-ul">
+                <li class="mobile-nav">
+                  <a
+                    href="./index.html#projects-jump-link"
+                    class="nav-item mobile-nav"
+                    id="projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="mobile-nav">
+                  <a
+                    href="./about.html"
+                    class="nav-item mobile-nav"
+                    id="about"
+                    >About</a
+                  >
+                </li>
+                <li class="mobile-nav">
+                  <a
+                    href="./contact.html"
+                    class="nav-item mobile-nav"
+                    id="contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           <div class="navbar-header">
             <button
+              class="custom-nav-toggle"
               type="button"
-              class="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#bs-nav-demo"
-              aria-expanded="false"
             >
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span> <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <span
+                ><i class="fas fa-bars fa-2x"></i
+              ></span>
             </button>
-          </div>
-
-          <div class="collapse navbar-collapse" id="bs-nav-demo">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
           </div>
         </div>
       </nav>
+      <div class="about-container">
+        <div class="about-text">
+          <h2>ABOUT</h2>
+          <p>I'm a web developer who caught the coding bug while touching up some HTML in my
+            marketing day job. Since then, I've been working on filling my development toolkit
+            with the latest technologies for pushing the boundaries of the web.</p>
 
-    <!-- ABOUT -->
+          <p>I have an extensive professional background in marketing and content
+            development, so I am just as comfortable talking to humans as I am to
+            computers, which I believe to be an essential skill for any developer.</p>
 
-    <div class="about" id="about">
-      <div class="parallax">
-        <div class="aboutText">
-          <div class="sectionTitle"><h2>ABOUT</h2></div>
-          <div class="bio">
-            <p>
-              I'm a web developer who caught the coding bug while
-              touching up some HTML in my marketing day job. Since then, I've
-              been working on filling my development toolkit with the latest
-              technologies for pushing the boundaries of the web.
-            </p>
-
-            <p>
-              I have an extensive professional background in marketing and
-              content development, so I am just as comfortable talking to humans
-              as I am to computers, which I believe to be an essential skill for
-              any developer.
-            </p>
-
-            <p>
-              When I'm not coding, I'm usually playing drums or guitar in an
-              around Brooklyn with any one of several bands and musical projects
-              I'm involved in.
-            </p>
-          </div>
+          <p>When I'm not coding, I'm usually playing drums or guitar in an around
+                Brooklyn with any one of several bands and musical projects I'm involved
+                in.</p>
         </div>
       </div>
-    </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="scripts.js"></script> -->
-
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"
-    ></script>
+    <script src="scripts.js"></script>
     <script src="js/userfx.js"></script>
   </body>
 </html>

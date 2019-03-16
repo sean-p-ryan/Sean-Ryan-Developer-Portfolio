@@ -1,4 +1,4 @@
-@media (min-width: $screen-width-sm){
+@media (min-width: $screen-width-md){
   .inner-nav-wrapper{
     display: flex;
     flex-direction: row;
@@ -13,7 +13,7 @@
   }
 }
 
-  @media(min-width: $screen-width-sm){
+  @media(min-width: $screen-width-md){
     .text-highlight-blue {
       box-shadow: inset 0px -16px 0px rgba(36, 113, 224, 1);
     }
@@ -42,10 +42,10 @@
     height: 30px;
     border: none;
     position: fixed;
-    right: 3rem;
-    top: 1.3rem;
+    right: 1rem;
+    top: 2rem;
     background: transparent;
-    @media(min-width: $screen-width-sm){
+    @media(min-width: $screen-width-md){
       display: none;
     }
   }
