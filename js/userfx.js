@@ -8,8 +8,6 @@ var fullScreenNav = false;
 var seanRyan = document.querySelector("#sean-ryan");
 var home = document.querySelector("#home");
 var projects = document.querySelector("#projects");
-var about = document.querySelector("#about");
-var contacat = document.querySelector("#contact");
 
 //add and blue underline to or from "Sean Ryan" text
 const addUnderlineToSr = () => {
@@ -72,25 +70,17 @@ window.addEventListener("scroll", function(e) {
     let scrollPos = pageYOffset;
       if (scrollPos <= 496) {
         activeNavItem = home;
-        console.log(activeNavItem);
         addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 497 && scrollPos <= 1640) {
+      } else if (scrollPos >= 450 && scrollPos <= 1640) {
         activeNavItem = projects;
         addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 1641 && scrollPos <= 2268) {
-        activeNavItem = about;
-        addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 2269) {
-        activeNavItem = contact;
-        addUnderlineOnScroll(activeNavItem, scrollPos);
-    }
-};
+      };
+    };
 });
 
 //add transition to nav bar on scrollPos
 window.addEventListener("scroll", function(e) {
-  let navBarText = document.querySelector("#bs-nav-demo");
-  let navBar = document.querySelector(".navbar-inverse");
+  let navBar = document.querySelector(".navbar-wrapper");
   let scrollPos = pageYOffset;
   if (scrollPos > 316) {
     navBarText.style.marginTop = "0px";
