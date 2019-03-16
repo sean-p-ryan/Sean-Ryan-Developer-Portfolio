@@ -1,16 +1,20 @@
-.about {
-	margin-top: 150px;
-	background-color: $blue-lpc;
-	@media (min-width: $screen-width-sm) {
-		margin-top: none;
+.background {
+		@media (min-width: $screen-width-sm) {
+		background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.1) ),
+	    url(../images/new_sean_drums.jpg);
+		height: 100vh;
 	}
+}
+
+.about-hr {
+	color: $blue-lpc;
+	width: 30rem;
 }
 
 .about p, h2 {
 	color: $white-lpc;
 	@media (min-width: $screen-width-sm){
 		margin-bottom: 3%;
-		margin-left: 10%;
 		margin-right: 10%;
 	}
 }
@@ -18,7 +22,7 @@
 .about h2 {
 	margin-bottom: none;
 	margin-top: 30px;
-	@media (max-width: $screen-width-sm){
+	@media (min-width: $screen-width-sm){
 		border-bottom: 2px solid $blue-lpc;
 		padding-bottom: 15px;
 		margin-bottom: 30px;
@@ -26,12 +30,11 @@
 }
 
 .bio {
-	padding-left: 20px;
 	padding-right: 20px;
 	background-color: $blue-lpc;
 	@media (min-width: $screen-width-sm){
-		width: 40%;
-		margin-left: 100px;
 		background-color: inherit;
+		width: 30rem;
+		margin-left: 10rem;
 	}
 }

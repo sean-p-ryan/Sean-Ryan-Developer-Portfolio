@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 2rem;
 }
 
 p {
@@ -50,7 +50,8 @@ button {
 	border-radius: 3px;
 	width: 130px;
 	height: 45px;
-  margin: 25px 5px;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
 }
 
 .sectionTitle {
@@ -58,5 +59,5 @@ button {
   color: black;
   font-style: bold;
   width: 100%;
-  margin-left: 17%;
+  // margin-left: 17%;
 }
