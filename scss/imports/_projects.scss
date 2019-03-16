@@ -42,7 +42,7 @@
   padding-top: 20px;
   @media (min-width: $screen-width-sm) {
     flex-direction: row;
-    height: 25rem;
+    height: auto;
     width: 100%;
   }
 }
