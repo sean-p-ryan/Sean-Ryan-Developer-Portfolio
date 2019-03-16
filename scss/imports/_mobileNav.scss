@@ -8,6 +8,7 @@
     @media(min-width: $screen-width-sm){
       font-size: 46px;
       margin-top: 1rem;
+      margin-left: 46px;
     }
   }
   h1:hover {
@@ -38,7 +39,7 @@
 
 .nav-home {
   @media(min-width: $screen-width-sm){
-    width: 15rem;
+    width: 16rem;
     margin-left: 4rem;
   }
 }
