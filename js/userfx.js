@@ -107,8 +107,8 @@ document.addEventListener("click", function(e) {
       if (e.target.matches(".fas") && fullScreenNav === false){
         mobileNavBackground.style.height = "100vh";
         fullScreenNav = true;
-      } else if (e.target.matches(".fas") && fullScreenNav === true){
-        mobileNavBackground.style.height = "120px";
+      } else if (e.target.matches(".fas") || e.target.matches(".nav-item") || fullScreenNav === true){
+        mobileNavBackground.style.height = "100px";
         fullScreenNav = false;
       }
 });
