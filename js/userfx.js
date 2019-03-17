@@ -1,81 +1,67 @@
-//selects all elements in nav bar
-var navItems = document.querySelectorAll(".nav-item");
-//item in nav bar with blue underline
-var activeNavItem = null;
-//whether nav bar background is full screen
+//checks whether nav bar background is full screen
 var fullScreenNav = false;
-//individual nav items
+//selects "Sean Ryan" text and "Projects" in nav bar
 var seanRyan = document.querySelector("#sean-ryan");
-var home = document.querySelector("#home");
 var projects = document.querySelector("#projects");
 
-//add and blue underline to or from "Sean Ryan" text
+//add underline to "Sean Ryan" text
 const addUnderlineToSr = () => {
   seanRyan.classList.add("text-highlight-blue");
-  activeNavItem = seanRyan;
 };
 
+//remove underline from "Sean Ryan" text
 const removeUnderlineFromSr = () => {
   seanRyan.classList.remove("text-highlight-blue");
 };
 
-//add or remove blue underline to or from nav item
-const addUnderlineToNavItem = item => {
-  item.classList.add("text-highlight-blue-li");
-  activeNavItem = item;
+//remove blue underline from "projects"
+const removeUnderlineFromProjects = () => {
+  projects.classList.remove("text-highlight-blue-li");
 };
 
-const removeUnderlineFromNavItem = item => {
-  item.classList.remove("text-highlight-blue-li");
+//add blue underline to "projects"
+const addUnderlineToProjects = () => {
+  projects.classList.add("text-highlight-blue-li");
 };
 
-// listen for nav bar item click
+
+// add underline to "projects" or "Sean Ryan" on click
 document.addEventListener(
   "click",
   function(e) {
-    if (e.target.matches(".nav-item")) {
-      navItems.forEach(function(element) {
-        if (element.matches("#sean-ryan")) {
-          removeUnderlineFromSr(e.target);
-        } else {
-          removeUnderlineFromNavItem(element);
-        }
-        if (e.target.matches("#sean-ryan")) {
-          addUnderlineToSr(e.target);
-        } else {
-          addUnderlineToNavItem(e.target);
-        }
-      });
-    }
-  },
-  false
-);
-
-const addUnderlineOnScroll = (active, scrollPos) => {
-  removeUnderlineFromSr();
-  navItems.forEach(element => {
-    removeUnderlineFromNavItem(element);
-    if (scrollPos <= 316) {
-      addUnderlineToSr();
-    } else if ((element = active)) {
-      addUnderlineToNavItem(active);
-    }
+    if (e.target.matches("#projects")) {
+        removeUnderlineFromSr();
+        addUnderlineToProjects();
+      } else if (e.target.matches("#sean-ryan")){
+        removeUnderlineFromProjects();
+        addUnderlineToSr();
+      }
+    false;
   });
+
+window.addEventListener("load", function(){
+  let scrollPos = pageYOffset;
+  if (scrollPos != 0) {
+    removeUnderlineFromSr();
+    addUnderlineToProjects();
+  }
+})
+
+//change nav underline on scroll
+const changeUnderlineOnScroll = (scrollPos) => {
+  if (scrollPos >= 770) {
+    removeUnderlineFromSr();
+    addUnderlineToProjects();
+  } else {
+    removeUnderlineFromProjects();
+    addUnderlineToSr();
+  }
 };
 
-// add blue underline to nav items on scroll
+//listen for scroll
 window.addEventListener("scroll", function(e) {
-  var mq = window.matchMedia( "(min-width: 500px)" );
-  if (mq.matches){
-    let scrollPos = pageYOffset;
-      if (scrollPos <= 496) {
-        activeNavItem = home;
-        addUnderlineOnScroll(activeNavItem, scrollPos);
-      } else if (scrollPos >= 450 && scrollPos <= 1640) {
-        activeNavItem = projects;
-        addUnderlineOnScroll(activeNavItem, scrollPos);
-      };
-    };
+  scrollPos = pageYOffset;
+  changeUnderlineOnScroll(scrollPos);
 });
 
 //add transition to nav bar on scrollPos
