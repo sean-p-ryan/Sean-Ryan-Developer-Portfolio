@@ -40,10 +40,12 @@ document.addEventListener(
   });
 
 window.addEventListener("load", function(){
-  let scrollPos = pageYOffset;
-  if (scrollPos != 0) {
+  let homePage = "https://www.seanpryan.dev/index.html"
+  if (window.pageYOffset != 0) {
     removeUnderlineFromSr();
     addUnderlineToProjects();
+  } else if (window.location.href = homePage) {
+    addUnderlineToSr();
   }
 })
 
