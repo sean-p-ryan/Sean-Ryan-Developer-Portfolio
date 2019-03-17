@@ -40,13 +40,13 @@ document.addEventListener(
   });
 
 window.addEventListener("load", function(){
-  let homePage = "https://www.seanpryan.dev/index.html"
-  if (window.pageYOffset != 0) {
+  let indexRegExp = new RegExp("index");
+  if (indexRegExp.test(window.location.href) && (window.pageYOffset != 0)){
     removeUnderlineFromSr();
     addUnderlineToProjects();
-  } else if (window.location.href = homePage) {
+  } else if (indexRegExp.test(window.location.href)){
     addUnderlineToSr();
-  }
+  };
 })
 
 //change nav underline on scroll
