@@ -82,10 +82,10 @@ window.addEventListener("scroll", function(e) {
 //increase/decrease height of mobile nav container on hamburger click
 document.addEventListener("click", function(e) {
     var mobileNavBackground = document.querySelector(".navbar-wrapper");
-      if (e.target.matches(".fas") && fullScreenNav === false){
+      if (e.target.matches(".custom-nav-toggle") && fullScreenNav === false){
         mobileNavBackground.style.height = "100vh";
         fullScreenNav = true;
-      } else if (e.target.matches(".fas") || e.target.matches(".nav-item") || fullScreenNav === true){
+      } else if (e.target.matches(".custom-nav-toggle") || e.target.matches(".nav-item") || fullScreenNav === true){
         mobileNavBackground.style.height = "100px";
         fullScreenNav = false;
       }
