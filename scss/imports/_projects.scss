@@ -28,12 +28,13 @@
   @media (min-width: $screen-width-sm) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
   }
 }
 
+
+
 #rgb-buttons {
-  margin-top: 27spx;
+  margin-top: 27px;
 }
 
 .image-and-description {
@@ -44,6 +45,21 @@
     flex-direction: row;
     height: auto;
     width: 100%;
+    // :hover {
+    //   background-color: $blue-lpc;
+    // }
+  }
+}
+//
+.image-and-description:hover {
+  background-color: $blue-lpc;
+  p, h3 {
+    color: $white-lpc;
+  }
+  button {
+    background-color: $blue-lpc;
+    border-color: $white-lpc;
+    color: $white-lpc;
   }
 }
 
