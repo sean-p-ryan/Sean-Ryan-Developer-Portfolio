@@ -4,6 +4,13 @@ var fullScreenNav = false;
 var seanRyan = document.querySelector("#sean-ryan");
 var projects = document.querySelector("#projects");
 
+//selects navbar
+var navBar = document.querySelector(".nav-bar-container");
+
+//selects all text in nav bar
+var navUl = document.querySelector(".nav-ul");
+var homeText = document.querySelector("#sean-ryan");
+
 //add underline to "Sean Ryan" text
 const addUnderlineToSr = () => {
   seanRyan.classList.add("text-highlight-blue");
@@ -71,13 +78,17 @@ window.addEventListener("scroll", function(e) {
   let navBar = document.querySelector(".navbar-wrapper");
   let scrollPos = pageYOffset;
   if (scrollPos > 316) {
-    navBarText.style.marginTop = "0px";
+    // navUl.style.marginTop = "0px";
+    // homeText.style.marginTop = "0px";
     navBar.style.height = "100px";
   } else {
-    navBarText.style.marginTop = "30px";
-    navBar.style.height = "140px";
+    // navUl.style.marginTop = "30px";
+    // homeText.style.marginTop = "30px";
+    navBar.style.height = "120px";
   }
 });
+
+
 
 //increase/decrease height of mobile nav container on hamburger click
 document.addEventListener("click", function(e) {
