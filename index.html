@@ -1,203 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sean Ryan</title>
-    <link rel="stylesheet" href="Styles/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Fira+Sans"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="main" id="home">
-      <!-- NAV BAR -->
-      <nav class="navbar navbar-wrapper">
-        <div class="nav-bar-container">
-            <div class="inner-nav-wrapper">
-              <div class="nav-home">
-                <a href="./index.html">
-                  <h1
-                    id="sean-ryan"
-                    class="nav-item mobile-nav"
-                  >
-                    Sean Ryan
-                  </h1>
-                </a>
-              </div>
-              <ul class="nav-ul">
-                <li class="mobile-nav">
-                  <a
-                    href="#projects-jump-link"
-                    class="nav-item mobile-nav"
-                    id="projects"
-                    >Projects</a
-                  >
-                </li>
-                <li class="mobile-nav">
-                  <a
-                    href="./about.html"
-                    class="nav-item mobile-nav"
-                    id="about"
-                    >About</a
-                  >
-                </li>
-                <li class="mobile-nav">
-                  <a
-                    href="./contact.html"
-                    class="nav-item mobile-nav"
-                    id="contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-          <div class="navbar-header">
-            <button
-              class="custom-nav-toggle"
-              type="button"
-            >
-              <span
-                ><i class="fas fa-bars fa-2x"></i
-              ></span>
-            </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sean Ryan</title>
+  <link rel="stylesheet" href="Styles/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138318303-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138318303-1');
+  </script>
+
+</head>
+
+<body>
+  <div class="main" id="home">
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-wrapper">
+      <div class="nav-bar-container">
+        <div class="inner-nav-wrapper">
+          <div class="nav-home">
+            <a href="./index.html">
+              <h1 id="sean-ryan" class="nav-item mobile-nav">
+                Sean Ryan
+              </h1>
+            </a>
           </div>
+          <ul class="nav-ul">
+            <li class="mobile-nav">
+              <a href="#projects-jump-link" class="nav-item mobile-nav" id="projects">Projects</a>
+            </li>
+            <li class="mobile-nav">
+              <a href="./about.html" class="nav-item mobile-nav" id="about">About</a>
+            </li>
+            <li class="mobile-nav">
+              <a href="./contact.html" class="nav-item mobile-nav" id="contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <div class="landing-body">
+        <div class="navbar-header">
+          <button class="custom-nav-toggle" type="button">
+            <span><i class="fas fa-bars fa-2x"></i></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="landing-body">
 
       <div class="tagline">
-          <p>
-            Full-stack web developer <br />
-            focused on JavaScript, React & Node. <br />
-            Living & coding in Brooklyn.
-          </p>
-        </div>
-        <div class="homeIcons">
-          <a href="https://github.com/sean-p-ryan" target="_blank"
-            ><i class="fab fa-github" id="homeIconGithub"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/seanryan11/" target="_blank"
-            ><i class="fab fa-linkedin" id="homeIconLinkedIn"></i
-          ></a>
-        </div>
+        <p>
+          Full-stack web developer <br />
+          focused on JavaScript, React & Node. <br />
+          Living & coding in Brooklyn.
+        </p>
+      </div>
+      <div class="homeIcons">
+        <a href="https://github.com/sean-p-ryan" target="_blank"><i class="fab fa-github" id="homeIconGithub"></i></a>
+        <a href="https://www.linkedin.com/in/seanryan11/" target="_blank"><i class="fab fa-linkedin"
+            id="homeIconLinkedIn"></i></a>
       </div>
     </div>
+  </div>
 
-    <!-- PROJECTS -->
-    <div class="projects" id="projects-jump-link">
+  <!-- PROJECTS -->
+  <div class="projects" id="projects-jump-link">
 
-      <div class="projectContainer" id="algoContainer">
-        <div class="sectionTitle">
-          <h2 id="projectsSectionTitle">PROJECTS</h2>
-        </div>
-        <div class="image-and-description">
-          <div class="projectImage" id="jQueryTodo"></div>
-          <div class="projectDescription">
-            <div class="projectText">
-              <h3>jQuery To Do List</h3>
-              <p>
-                  A to do application built with jQuery. Based on a tutorial by
-                  Colt Steele which demonstrates adding and removing to do items,
-                  I expanded the functionality of this application to include the ability
-                  to archive and view completed to dos, and set one to do as the "top priority."
-              </p>
-            </div>
-            <div class="buttonContainer" id="algo-buttons">
-              <a
-                href="https://sean-p-ryan.github.io/jQuery-Todo-List/"
-                target="_blank"
-                ><button class="project-button">View project</button></a
-              >
-              <a
-                href="https://github.com/sean-p-ryan/jQuery-Todo-List"
-                target="_blank"
-                ><button class="project-button">Source Code</button>
-              </a>
-            </div>
+    <div class="projectContainer" id="algoContainer">
+      <div class="sectionTitle">
+        <h2 id="projectsSectionTitle">PROJECTS</h2>
+      </div>
+      <div class="image-and-description">
+        <div class="projectImage" id="jQueryTodo"></div>
+        <div class="projectDescription">
+          <div class="projectText">
+            <h3>jQuery To Do List</h3>
+            <p>
+              A to do application built with jQuery. Based on a tutorial by
+              Colt Steele which demonstrates adding and removing to do items,
+              I expanded the functionality of this application to include the ability
+              to archive and view completed to dos, and set one to do as the "top priority."
+            </p>
+          </div>
+          <div class="buttonContainer" id="algo-buttons">
+            <a href="https://sean-p-ryan.github.io/jQuery-Todo-List/" target="_blank"><button
+                class="project-button">View project</button></a>
+            <a href="https://github.com/sean-p-ryan/jQuery-Todo-List" target="_blank"><button
+                class="project-button">Source Code</button>
+            </a>
           </div>
         </div>
       </div>
-      <div class="projectContainer" id="algoContainer">
+    </div>
+    <div class="projectContainer" id="algoContainer">
       <div class="image-and-description">
         <div class="projectImage" id="algoRhythm"></div>
-          <div class="projectDescription">
-            <div class="projectText">
-              <h3>Algo Rhythm</h3>
-              <p>
-                A single page application allowing the user to play audio files
-                using interactive scroll bars and volume controls. React powers
-                the frontend layout and interactivity, and React Router enables
-                state-based routing. Built as part of the Bloc Web Development
-                curriculum.
-              </p>
-            </div>
-            <div class="buttonContainer" id="algo-buttons">
-              <a
-                href="https://condescending-noyce-3c47f5.netlify.com/"
-                target="_blank"
-                ><button class="project-button">View project</button></a
-              >
-              <a
-                href="https://github.com/sean-p-ryan/bloc-jams-react"
-                target="_blank"
-                ><button class="project-button">Source Code</button>
-              </a>
-            </div>
+        <div class="projectDescription">
+          <div class="projectText">
+            <h3>Algo Rhythm</h3>
+            <p>
+              A single page application allowing the user to play audio files
+              using interactive scroll bars and volume controls. React powers
+              the frontend layout and interactivity, and React Router enables
+              state-based routing. Built as part of the Bloc Web Development
+              curriculum.
+            </p>
           </div>
-        </div>
-      </div>
-      <div class="projectContainer" id="rgbContainer">
-        <div class="image-and-description">
-          <div class="projectImage" id="rgbGame"></div>
-
-          <div class="projectDescription">
-            <div class="projectText">
-              <h3>RBG Color Picker</h3>
-              <p>
-                The user is given an RGB color value and must select one of
-                three colors that matches this value. "Easy" and "hard" modes
-                present the user with 3 and 6 possible color choices,
-                respectively. Built with plain JS and styled with CSS, this
-                simple app packs a lot of functionality into not a lot of code.
-                Based on a Colt Steel Web Development Bootcamp project.
-              </p>
-            </div>
-            <div class="buttonContainer" id="rgb-buttons">
-              <a
-                href="https://sean-p-ryan.github.io/RGB-Color-Guessing-Game/"
-                target="_blank"
-              >
-                <button class="project-button">View project</button></a
-              >
-              <a
-                href="https://github.com/sean-p-ryan/RGB-Color-Guessing-Game"
-                target="_blank"
-              >
-                <button class="project-button">Source Code</button></a
-              >
-            </div>
+          <div class="buttonContainer" id="algo-buttons">
+            <a href="https://condescending-noyce-3c47f5.netlify.com/" target="_blank"><button
+                class="project-button">View project</button></a>
+            <a href="https://github.com/sean-p-ryan/bloc-jams-react" target="_blank"><button
+                class="project-button">Source Code</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
+    <div class="projectContainer" id="rgbContainer">
+      <div class="image-and-description">
+        <div class="projectImage" id="rgbGame"></div>
 
-    <script src="scripts.js"></script>
-    <script src="js/userfx.js"></script>
-  </body>
+        <div class="projectDescription">
+          <div class="projectText">
+            <h3>RBG Color Picker</h3>
+            <p>
+              The user is given an RGB color value and must select one of
+              three colors that matches this value. "Easy" and "hard" modes
+              present the user with 3 and 6 possible color choices,
+              respectively. Built with plain JS and styled with CSS, this
+              simple app packs a lot of functionality into not a lot of code.
+              Based on a Colt Steel Web Development Bootcamp project.
+            </p>
+          </div>
+          <div class="buttonContainer" id="rgb-buttons">
+            <a href="https://sean-p-ryan.github.io/RGB-Color-Guessing-Game/" target="_blank">
+              <button class="project-button">View project</button></a>
+            <a href="https://github.com/sean-p-ryan/RGB-Color-Guessing-Game" target="_blank">
+              <button class="project-button">Source Code</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script src="js/userfx.js"></script>
+</body>
+
 </html>
