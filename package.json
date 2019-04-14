@@ -5,7 +5,7 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme",
   "dependencies": {
-    "start-dev": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.2.0"
+    "webpack-dev-server": "^3.3.1"
   }
 }
