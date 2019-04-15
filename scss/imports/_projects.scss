@@ -9,13 +9,10 @@
   }
 }
 
-.sectionTitle {
-  border-bottom: 1px solid $blue-lpc;
-}
-
 #projectsSectionTitle {
   color: $black-lpc;
-  margin: 20px 0px;;
+  margin: 20px 0px;
+  padding-left: 1.5rem;
 }
 
 .projectContainer {
@@ -24,7 +21,7 @@
   margin: 0 auto;
   width: 95%;
   height: auto;
-  border-bottom: 1px solid $blue-lpc;
+  border-top: 1px solid $blue-lpc;
   @media (min-width: $screen-width-sm) {
     display: flex;
     flex-direction: column;
@@ -44,15 +41,15 @@
   @media (min-width: $screen-width-sm) {
     flex-direction: row;
     height: auto;
-    width: 100%;
-    // :hover {
-    //   background-color: $blue-lpc;
-    // }
+    width: 90%;
+    transition: background-color;
+    margin-bottom: 2rem;
   }
 }
-//
-.image-and-description:hover {
+
+.projectContainer:hover {
   background-color: $blue-lpc;
+  transition: 0.5s;
   p, h3 {
     color: $white-lpc;
   }
@@ -112,7 +109,7 @@
 }
 
 .projectText h3 {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   margin-top: 0;
 }
 
