@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme",
   "dependencies": {
+    "node-sass": "^4.11.0",
     "start": "webpack-dev-server"
   },
   "devDependencies": {

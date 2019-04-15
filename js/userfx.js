@@ -1,15 +1,22 @@
 //checks whether nav bar background is full screen
-var fullScreenNav = false;
-//selects "Sean Ryan" text and "Projects" in nav bar
-var seanRyan = document.querySelector("#sean-ryan");
-var projects = document.querySelector("#projects");
+let fullScreenNav = false;
+
+//selects "Sean Ryan" text in  and "Projects" in nav bar
+let seanRyan = document.querySelector("#sean-ryan");
+let projects = document.querySelector("#projects");
 
 //selects navbar
-var navBar = document.querySelector(".nav-bar-container");
+let navBar = document.querySelector(".navbar-wrapper");
 
 //selects all text in nav bar
-var navUl = document.querySelector(".nav-ul");
-var homeText = document.querySelector("#sean-ryan");
+let navUl = document.querySelector(".nav-ul");
+let homeText = document.querySelector("#sean-ryan");
+
+//selects mobile nad toggle 
+let mobileNavButton = document.querySelector(".fas fa-bars fa-2x");
+
+//stores vertical scroll position
+let scrollPos = pageYOffset;
 
 //add underline to "Sean Ryan" text
 const addUnderlineToSr = () => {
@@ -31,27 +38,45 @@ const addUnderlineToProjects = () => {
   projects.classList.add("text-highlight-blue-li");
 };
 
+//expose mobile nav options on icon click
+const mobileNavToggle = (e) => {
+  console.log("I was clicked")
+  if (fullScreenNav === false) {
+    console.log("I was clicked too")
+    navBar.style.height = "100vh";
+    fullScreenNav = true;
+  } else if (fullScreenNav === true) {
+    navBar.style.height = "100px";
+    fullScreenNav = false;
+  }
+}
 
-// add underline to "projects" or "Sean Ryan" on click
+
+// listen for click on nav items and toggle icon
 document.addEventListener(
   "click",
-  function(e) {
+  function (e) {
+    console.log(e.target);
     if (e.target.matches("#projects")) {
-        removeUnderlineFromSr();
-        addUnderlineToProjects();
-      } else if (e.target.matches("#sean-ryan")){
-        removeUnderlineFromProjects();
-        addUnderlineToSr();
-      }
-    false;
+      removeUnderlineFromSr();
+      addUnderlineToProjects();
+    } else if (e.target.matches("#sean-ryan")) {
+      removeUnderlineFromProjects();
+      addUnderlineToSr();
+    }
+    if (e.target.closest(".custom-nav-toggle")) {
+      console.log("BANG")
+      mobileNavToggle(e);
+    }
   });
 
-window.addEventListener("load", function(){
+
+window.addEventListener("load", function () {
   let indexRegExp = new RegExp("index");
-  if (indexRegExp.test(window.location.href) && (window.pageYOffset != 0)){
+  if (indexRegExp.test(window.location.href) && (window.pageYOffset != 0)) {
     removeUnderlineFromSr();
     addUnderlineToProjects();
-  } else if (indexRegExp.test(window.location.href)){
+  } else if (indexRegExp.test(window.location.href)) {
     addUnderlineToSr();
   };
 })
@@ -68,36 +93,12 @@ const changeUnderlineOnScroll = (scrollPos) => {
 };
 
 //listen for scroll
-window.addEventListener("scroll", function(e) {
+window.addEventListener("scroll", function (e) {
   scrollPos = pageYOffset;
   changeUnderlineOnScroll(scrollPos);
-});
-
-//add transition to nav bar on scrollPos
-window.addEventListener("scroll", function(e) {
-  let navBar = document.querySelector(".navbar-wrapper");
-  let scrollPos = pageYOffset;
   if (scrollPos > 316) {
-    // navUl.style.marginTop = "0px";
-    // homeText.style.marginTop = "0px";
     navBar.style.height = "100px";
   } else {
-    // navUl.style.marginTop = "30px";
-    // homeText.style.marginTop = "30px";
     navBar.style.height = "120px";
   }
-});
-
-
-
-//increase/decrease height of mobile nav container on hamburger click
-document.addEventListener("click", function(e) {
-    var mobileNavBackground = document.querySelector(".navbar-wrapper");
-      if (e.target = mobileNavBackground && fullScreenNav === false){
-        mobileNavBackground.style.height = "100vh";
-        fullScreenNav = true;
-      } else if (e.target = mobileNavBackground && fullScreenNav === true){
-        mobileNavBackground.style.height = "100px";
-        fullScreenNav = false;
-      }
 });

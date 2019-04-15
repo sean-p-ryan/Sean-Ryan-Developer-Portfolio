@@ -37,6 +37,10 @@
   overflow-y: hidden;
 }
 
+.nav-toggle-wrapper {
+  width: 100px;
+}
+
 .nav-home {
   @media(min-width: $screen-width-sm){
     width: 16rem;
