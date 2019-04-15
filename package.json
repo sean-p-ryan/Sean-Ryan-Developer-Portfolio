@@ -4,8 +4,7 @@
   "description": "BREAKPOINTS:",
   "main": "scripts.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,5 @@
     "start": "webpack-dev-server"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.3.1"
   }
 }
