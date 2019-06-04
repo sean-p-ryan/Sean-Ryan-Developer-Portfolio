@@ -1,11 +1,12 @@
 .projects {
   margin: 0 auto;
+  padding: 0 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: $white-lpc;
   @media(min-width: $screen-width-sm) {
-    width: 67%;
+    width: 85%;
   }
 }
 
