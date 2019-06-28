@@ -70,12 +70,12 @@ document.addEventListener(
     if (e.target.matches("#projects")) {
       removeUnderlineFromSr();
       addUnderlineToProjects();
+      mobileNavToggle(e);
     } else if (e.target.matches("#sean-ryan")) {
       removeUnderlineFromProjects();
       addUnderlineToSr();
     }
-    if (e.target.closest(".custom-nav-toggle")) {
-      console.log("BANG")
+    if (e.target.closest(".custom-nav-toggle")) {      
       mobileNavToggle(e);
     }
   });
