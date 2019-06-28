@@ -38,6 +38,16 @@ const addUnderlineToProjects = () => {
   projects.classList.add("text-highlight-blue-li");
 };
 
+// add gray background to nav on scroll
+const addGrayNavBackground = (scrollPos) => {
+  if (scrollPos > 0) {
+    navBar.classList.add("nav-background-gray");
+    navBar.classList.remove("nav-background-none");
+  } else {
+    navBar.classList.add("nav-background-none");
+  }
+}
+
 //expose mobile nav options on icon click
 const mobileNavToggle = (e) => {
   console.log("I was clicked")
@@ -92,13 +102,9 @@ const changeUnderlineOnScroll = (scrollPos) => {
   }
 };
 
-//listen for scroll
+// change nav bar height on scroll
 window.addEventListener("scroll", function (e) {
   scrollPos = pageYOffset;
   changeUnderlineOnScroll(scrollPos);
-  if (scrollPos > 316) {
-    navBar.style.height = "100px";
-  } else {
-    navBar.style.height = "120px";
-  }
+  addGrayNavBackground(scrollPos)
 });

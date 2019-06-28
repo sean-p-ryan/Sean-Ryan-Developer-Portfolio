@@ -1,13 +1,5 @@
 .about-container {
-		@media (min-width: $screen-width-md) {
-		height: 100vh;
-		background-image: linear-gradient( rgba(0,0,0,.1), rgba(0,0,0,.1) ),
-	    url(../images/new_sean_drums.jpg);
-				background-color: #303030;
-				background-size: cover;
-		    background-position-x: 100px;
-		    background-repeat: no-repeat;
-	}
+	width: 100vw;
 }
 
 .about-text {
@@ -19,15 +11,14 @@
 		padding-top: 10rem;
 		text-align: left;
 		width: 40%;
-		padding-left: 8rem;
-		margin: 0;
+		// padding-left: 8rem;
+		margin: 0 auto;
 	}
 }
 
 .about-text p, h2 {
 	color: $black-lpc;
-	@media (min-width: $screen-width-md){
-		color: $white-lpc;
+	@media (min-width: $screen-width-md){		
 		margin-bottom: 3%;
 		margin-right: 10%;
 		margin-top: 0;
@@ -35,6 +26,7 @@
 }
 
 .about-text h2 {
+	text-align: center;
 	margin-bottom: none;
 	margin-top: 30px;
 	@media (min-width: $screen-width-md){

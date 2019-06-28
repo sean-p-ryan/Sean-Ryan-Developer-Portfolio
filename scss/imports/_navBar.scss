@@ -49,3 +49,13 @@
       display: none;
     }
   }
+
+  .nav-background-gray{
+    background-color: $gray-lpc;
+    transition: background-color 0.3s;
+  }
+
+  .nav-background-none{
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
