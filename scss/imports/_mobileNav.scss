@@ -26,6 +26,9 @@
 }
 
 .navbar-wrapper {  
+  @media (max-width: $screen-width-md){
+    background-color: $gray-lpc;
+  }
   height: 6rem;
   transition: height;
   transition-duration: 0.5s;
