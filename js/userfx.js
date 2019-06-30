@@ -75,7 +75,7 @@ document.addEventListener(
       removeUnderlineFromProjects();
       addUnderlineToSr();
     }
-    if (e.target.closest(".custom-nav-toggle")) {      
+    if (e.target.closest(".custom-nav-toggle")) {
       mobileNavToggle(e);
     }
   });
@@ -106,5 +106,7 @@ const changeUnderlineOnScroll = (scrollPos) => {
 window.addEventListener("scroll", function (e) {
   scrollPos = pageYOffset;
   changeUnderlineOnScroll(scrollPos);
-  addGrayNavBackground(scrollPos)
+  if (window.innerWidth > 768) {
+    addGrayNavBackground(scrollPos)
+  }
 });
