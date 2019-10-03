@@ -10,10 +10,13 @@ let navUl = document.querySelector(".nav-ul");
 let homeText = document.querySelector("#sean-ryan");
 
 //selects mobile nad toggle 
-let mobileNavButton = document.querySelector(".fas fa-bars fa-2x");
+let mobileNavButton = document.querySelector(".custom-nav-toggle");
 
 //stores vertical scroll position
 let scrollPos = pageYOffset;
+
+// Track if nav is full screen
+let fullScreenNav = false;
 
 //add underline to "Sean Ryan" text
 const addUnderlineToSr = () => {
@@ -47,7 +50,14 @@ const addGrayNavBackground = (scrollPos) => {
 
 //expose mobile nav options on icon click
 const mobileNavToggle = (e) => {
-    navBar.style.height = "100px";
+    console.log(fullScreenNav)
+    if (!fullScreenNav) {
+        fullScreenNav = true;
+        navBar.style.height = "100vh";
+    } else {
+        fullScreenNav = false;
+        navBar.style.height = "100px";
+    }
 }
 
 
@@ -63,8 +73,8 @@ document.addEventListener(
         } else if (e.target.matches("#sean-ryan")) {
             removeUnderlineFromProjects();
             addUnderlineToSr();
-        }
-        if (e.target.closest(".custom-nav-toggle")) {
+        } else if (e.target.closest(".custom-nav-toggle")) {
+            console.log("button clicked")
             mobileNavToggle(e);
         }
     });
