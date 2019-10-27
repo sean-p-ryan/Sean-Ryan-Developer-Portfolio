@@ -9,7 +9,7 @@ let navBar = document.querySelector(".navbar-wrapper");
 let navUl = document.querySelector(".nav-ul");
 let homeText = document.querySelector("#sean-ryan");
 
-//selects mobile nad toggle 
+//selects mobile and toggle 
 let mobileNavButton = document.querySelector(".custom-nav-toggle");
 
 //stores vertical scroll position
@@ -48,8 +48,8 @@ const addGrayNavBackground = (scrollPos) => {
     }
 }
 
-//expose mobile nav options on icon click
-const mobileNavToggle = (e) => {
+// Expose mobile nav options on icon click
+const mobileNavToggle = () => {
     console.log(fullScreenNav)
     if (!fullScreenNav) {
         fullScreenNav = true;
@@ -61,7 +61,7 @@ const mobileNavToggle = (e) => {
 }
 
 
-// listen for click on nav items and toggle icon
+// Listen for click on nav items and toggle icon
 document.addEventListener(
     "click",
     function(e) {
@@ -69,7 +69,7 @@ document.addEventListener(
         if (e.target.matches("#projects")) {
             removeUnderlineFromSr();
             addUnderlineToProjects();
-            mobileNavToggle(e);
+            // mobileNavToggle();
         } else if (e.target.matches("#sean-ryan")) {
             removeUnderlineFromProjects();
             addUnderlineToSr();
