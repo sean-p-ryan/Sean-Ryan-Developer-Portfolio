@@ -23,17 +23,12 @@ const addUnderlineToSr = () => {
     seanRyan.classList.add("text-highlight-blue");
 };
 
-//remove underline from "Sean Ryan" text
-const removeUnderlineFromSr = () => {
-    seanRyan.classList.remove("text-highlight-blue");
-};
-
 //remove blue underline from "projects"
 const removeUnderlineFromProjects = () => {
     projects.classList.remove("text-highlight-blue-li");
 };
 
-//add blue underline to "projects"
+// Add blue underline to "projects"
 const addUnderlineToProjects = () => {
     projects.classList.add("text-highlight-blue-li");
 };
@@ -67,9 +62,10 @@ document.addEventListener(
     function(e) {
         console.log(e.target);
         if (e.target.matches("#projects")) {
-            removeUnderlineFromSr();
+            console.log("namd")
+                // removeUnderlineFromSr();
             addUnderlineToProjects();
-            // mobileNavToggle();
+            navBar.classList.add("nav-background-gray");
         } else if (e.target.matches("#sean-ryan")) {
             removeUnderlineFromProjects();
             addUnderlineToSr();
@@ -83,8 +79,8 @@ document.addEventListener(
 window.addEventListener("load", function() {
     let indexRegExp = new RegExp("index");
     if (indexRegExp.test(window.location.href) && (window.pageYOffset != 0)) {
-        removeUnderlineFromSr();
         addUnderlineToProjects();
+        navBar.classList.add("nav-background-gray");
     } else if (indexRegExp.test(window.location.href)) {
         addUnderlineToSr();
     };
