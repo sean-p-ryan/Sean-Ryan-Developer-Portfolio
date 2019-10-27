@@ -34,13 +34,12 @@ const addUnderlineToProjects = () => {
 };
 
 // add gray background to nav on scroll
-const addGrayNavBackground = (scrollPos) => {
-    if (scrollPos > 0) {
-        navBar.classList.add("nav-background-gray");
-        navBar.classList.remove("nav-background-none");
-    } else {
-        navBar.classList.add("nav-background-none");
-    }
+const addGrayNavBackground = () => {
+    navBar.classList.add("nav-background-gray");
+}
+
+const removeGrayNavBackground = () => {
+    navBar.classList.remove("nav-background-gray");
 }
 
 // Expose mobile nav options on icon click
@@ -63,7 +62,6 @@ document.addEventListener(
         console.log(e.target);
         if (e.target.matches("#projects")) {
             console.log("namd")
-                // removeUnderlineFromSr();
             addUnderlineToProjects();
             navBar.classList.add("nav-background-gray");
         } else if (e.target.matches("#sean-ryan")) {
@@ -86,22 +84,15 @@ window.addEventListener("load", function() {
     };
 })
 
-//change nav underline on scroll
-const changeUnderlineOnScroll = (scrollPos) => {
-    if (scrollPos >= 770) {
-        removeUnderlineFromSr();
-        addUnderlineToProjects();
-    } else {
-        removeUnderlineFromProjects();
-        addUnderlineToSr();
-    }
-};
-
-// change nav bar height on scroll
+// Add nav bar effects and item underlines on scroll
 window.addEventListener("scroll", function(e) {
     scrollPos = pageYOffset;
-    changeUnderlineOnScroll(scrollPos);
-    if (window.innerWidth > 768) {
-        addGrayNavBackground(scrollPos)
+    addGrayNavBackground();
+    if (window.innerWidth > 768 && scrollPos > 770) {
+        addUnderlineToProjects();
+    } else if (window.innerWidth > 768 && scrollPos > 0 && scrollPos <= 770) {
+        removeUnderlineFromProjects();
+    } else if (window.innerWidth > 768 && scrollPos === 0) {
+        removeGrayNavBackground();
     }
 });
