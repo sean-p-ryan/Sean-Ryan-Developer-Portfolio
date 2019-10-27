@@ -27,6 +27,10 @@
     line-height: 1.455;
 }
 
+.custon-nav-toggle:focus {
+    outline: none;
+}
+
 .navbar-toggle .icon-bar {
     height: 4px;
 }
