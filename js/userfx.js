@@ -18,11 +18,6 @@ let scrollPos = pageYOffset;
 // Track if nav is full screen
 let fullScreenNav = false;
 
-//add underline to "Sean Ryan" text
-const addUnderlineToSr = () => {
-    seanRyan.classList.add("text-highlight-blue");
-};
-
 //remove blue underline from "projects"
 const removeUnderlineFromProjects = () => {
     projects.classList.remove("text-highlight-blue-li");
@@ -44,7 +39,6 @@ const removeGrayNavBackground = () => {
 
 // Expose mobile nav options on icon click
 const mobileNavToggle = () => {
-    console.log(fullScreenNav)
     if (!fullScreenNav) {
         fullScreenNav = true;
         navBar.style.height = "100vh";
@@ -60,16 +54,16 @@ document.addEventListener(
     "click",
     function(e) {
         console.log(e.target);
-        if (e.target.matches("#projects")) {
-            console.log("namd")
+        if (e.target.closest(".custom-nav-toggle")) {
+            mobileNavToggle();
+        } else if (window.innerWidth < 768) {
+            mobileNavToggle();
+        } else if (e.target.matches("#projects")) {
             addUnderlineToProjects();
             navBar.classList.add("nav-background-gray");
         } else if (e.target.matches("#sean-ryan")) {
             removeUnderlineFromProjects();
             addUnderlineToSr();
-        } else if (e.target.closest(".custom-nav-toggle")) {
-            console.log("button clicked")
-            mobileNavToggle(e);
         }
     });
 
