@@ -56,7 +56,7 @@ document.addEventListener(
         console.log(e.target.tagName);
         if (e.target.closest(".custom-nav-toggle")) {
             mobileNavToggle();
-        } else if (window.innerWidth < 992 && (e.target.matches("#projects") || e.target.matches("#sean-ryan"))) {
+        } else if (window.innerWidth < 992 && (e.target.matches("#projects") || (e.target.matches("#sean-ryan") && fullScreenNav))) {
             mobileNavToggle();
         } else if (e.target.matches("#projects")) {
             addUnderlineToProjects();
