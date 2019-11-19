@@ -1,7 +1,4 @@
 @media (max-width: $screen-width-sm) {
-  #sean-ryan {
-    display: none;
-  }
   .nav-ul {
     margin-top: 170px;
     text-align: center;
@@ -10,7 +7,6 @@
 
 .nav-bar-container {
   h1 {
-    // font-size: 2rem;
     font-weight: 1000;
     letter-spacing: 2px;
     margin-top: 1rem;
@@ -28,6 +24,10 @@
   }
 }
 
+h3 {
+  margin-left: 4rem;
+}
+
 .inner-nav-wrapper {
   width: 100%;
   transition: margin-top;
@@ -38,7 +38,7 @@
   @media (max-width: $screen-width-md){
     background-color: $gray-lpc;
   }
-  height: 6rem;
+  height: 3.5rem;
   transition: height;
   transition-duration: 0.5s;
   border: none;
@@ -52,22 +52,15 @@
   width: 100px;
 }
 
-.nav-home {
-  @media(min-width: $screen-width-sm){
-    width: 16rem;
-  }
-}
-
 .nav-ul {
   list-style: none;
-  padding: 0 115px;
+  margin-right: 4rem;
 }
 
 .nav-ul > li {
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-top: 2rem;
   @media(min-width: $screen-width-md){
-    margin: 30px auto;
+    // margin: 30px auto;
   };
 }

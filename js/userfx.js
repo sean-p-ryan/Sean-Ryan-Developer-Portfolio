@@ -41,10 +41,10 @@ const removeGrayNavBackground = () => {
 const mobileNavToggle = () => {
     if (!fullScreenNav) {
         fullScreenNav = true;
-        navBar.style.height = "100vh";
+        navBar.style.height = "3.5rem";
     } else {
         fullScreenNav = false;
-        navBar.style.height = "100px";
+        navBar.style.height = "3.5rem";
     }
 }
 
@@ -66,17 +66,6 @@ document.addEventListener(
             addUnderlineToSr();
         }
     });
-
-
-window.addEventListener("load", function() {
-    let indexRegExp = new RegExp("index");
-    if (indexRegExp.test(window.location.href) && (window.pageYOffset != 0)) {
-        addUnderlineToProjects();
-        navBar.classList.add("nav-background-gray");
-    } else if (indexRegExp.test(window.location.href)) {
-        addUnderlineToSr();
-    };
-})
 
 // Add nav bar effects and item underlines on scroll
 window.addEventListener("scroll", function(e) {

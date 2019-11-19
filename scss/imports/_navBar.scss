@@ -1,3 +1,6 @@
+#sean-ryan {
+    margin: 0 4rem;
+}
 @media (min-width: $screen-width-md) {
     .inner-nav-wrapper {
         display: flex;
@@ -9,7 +12,7 @@
         flex-direction: row;
     }
     .nav-ul>li {
-        margin-right: 2rem;
+        margin-left: 2rem;
     }
     .nav-li {
         height: 100%;
@@ -45,8 +48,8 @@ button:focus {
     height: 30px;
     border: none;
     position: fixed;
-    right: 1rem;
-    top: 2rem;
+    right: 3rem;
+    top: 0.8rem;
     background: transparent;
     @media(min-width: $screen-width-md) {
         display: none;
