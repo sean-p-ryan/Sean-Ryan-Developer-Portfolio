@@ -67,6 +67,7 @@ document.addEventListener(
         }
     });
 
+
 // Add nav bar effects and item underlines on scroll
 window.addEventListener("scroll", function(e) {
     scrollPos = pageYOffset;
