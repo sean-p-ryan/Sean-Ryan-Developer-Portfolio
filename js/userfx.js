@@ -44,7 +44,7 @@ const mobileNavToggle = () => {
         navBar.style.height = "3.5rem";
     } else {
         fullScreenNav = false;
-        navBar.style.height = "3.5rem";
+        navBar.style.height = "100vh";
     }
 }
 
