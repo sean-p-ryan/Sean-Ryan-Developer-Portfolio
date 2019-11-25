@@ -1,5 +1,6 @@
 #sean-ryan {
-    margin: 0.4rem 4rem;
+    margin: 0.8rem 0;
+    // color: #fff;
 }
 @media (min-width: $screen-width-md) {
     .inner-nav-wrapper {
@@ -48,16 +49,16 @@ button:focus {
     height: 30px;
     border: none;
     position: fixed;
-    right: 3rem;
-    top: 0.8rem;
+    right: 1rem;
+    top: 0.9rem;
     background: transparent;
     @media(min-width: $screen-width-md) {
         display: none;
     }
 }
 
-.nav-background-gray {
-    background-color: $gray-lpc;
+.nav-background-black {
+    background-color: #0B0B0D;
     transition: background-color 0.3s;
 }
 

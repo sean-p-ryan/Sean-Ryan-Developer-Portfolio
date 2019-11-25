@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: $body-text-lpc;
     overflow-x: hidden;
+    background-color: #F2F2F2;
 }
 
 h1,
@@ -31,7 +32,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
 }
 
@@ -44,27 +45,17 @@ a {
     color: $black-lpc;
 }
 
-button {
-    color: $black;
-    font-weight: 700;
-    text-transform: uppercase;
-    background: $white-lpc;
-    border: 1px solid #000000;
-    border-radius: 3px;
-    width: 130px;
-    height: 45px;
-    cursor: pointer;
-    @media (min-width: $screen-width-sm) {
-        width: 76px;
-    }
-    @media (min-width: $screen-width-md) {}
-    @media (min-width: $screen-width-lg) {}
+.section-title {    
+    color: black;
+    font-style: bold;    
+    font-size: 2rem;
+    border-bottom: 5px solid $blue-lpc;
+    width: max-content;
 }
 
-.sectionTitle {
-    padding-top: 10px;
-    color: black;
-    font-style: bold;
-    width: 100%;
-    // margin-left: 17%;
+.left-wrapper {    
+    margin-left: 1rem;
+    @media (min-width: $screen-width-sm){
+        margin-left: 4rem;
+    }
 }

@@ -1,6 +1,7 @@
 //selects "Sean Ryan" text in  and "Projects" in nav bar
 let seanRyan = document.querySelector("#sean-ryan");
 let projects = document.querySelector("#projects");
+let navItems = document.querySelectorAll(".nav-item");
 
 //selects navbar
 let navBar = document.querySelector(".navbar-wrapper");
@@ -29,12 +30,12 @@ const addUnderlineToProjects = () => {
 };
 
 // add gray background to nav on scroll
-const addGrayNavBackground = () => {
-    navBar.classList.add("nav-background-gray");
+const addBlackNavBackground = () => {
+    navBar.classList.add("nav-background-black");
 }
 
-const removeGrayNavBackground = () => {
-    navBar.classList.remove("nav-background-gray");
+const removeBlackNavBackground = () => {
+    navBar.classList.remove("nav-background-black");
 }
 
 // Expose mobile nav options on icon click
@@ -48,6 +49,18 @@ const mobileNavToggle = () => {
     }
 }
 
+const makeNavBarTextWhite = () => {
+    console.log("here are teh nav items navItems" + navItems)
+    navItems.forEach(item => {
+        item.style.color = '#fff'
+    })    
+}
+
+const makeNavBarTextBlack = () => {
+    navItems.forEach(item => {
+        item.style.color = '#0B0B0D';
+    })      
+}
 
 // Listen for click on nav items and toggle icon
 document.addEventListener(
@@ -67,17 +80,18 @@ document.addEventListener(
         }
     });
 
-
 // Add nav bar effects and item underlines on scroll
 window.addEventListener("scroll", function(e) {
     scrollPos = pageYOffset;
-    addGrayNavBackground();
+    addBlackNavBackground();
+    makeNavBarTextWhite();
     if (window.innerWidth > 992 && scrollPos > 770) {
         addUnderlineToProjects();
     } else if (window.innerWidth > 992 && scrollPos > 0 && scrollPos <= 770) {
         removeUnderlineFromProjects();
     } else if (window.innerWidth > 992 && scrollPos === 0) {
-        removeGrayNavBackground();
+        removeBlackNavBackground();
+        makeNavBarTextBlack();
     }
 });
 
