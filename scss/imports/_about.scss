@@ -5,7 +5,9 @@
 // $screen-width-lg: 1200px;
 
 .headshot {
-    background: $blue-lpc;
+    background-image: url('../images/spr-old-headshot.jpg');    
+    background-size: cover;
+    border: 1px solid black;
     width: 150px;
     height: 150px;
     border-radius: 50%;
