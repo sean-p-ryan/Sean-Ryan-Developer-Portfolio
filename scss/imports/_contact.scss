@@ -1,36 +1,40 @@
-.contactText {
-	width: 95%;
+// $screen-width-xxs: 374px;
+// $screen-width-xs: 414px;
+// $screen-width-sm: 768px;
+// $screen-width-md: 992px;
+// $screen-width-lg: 1200px;
+
+.contact-container {
+	margin-top: 2rem;
+	@media (min-width: $screen-width-xs) {
+		width: 350px;
+	}
+	@media (min-width: $screen-width-sm) {
+		width: 500px;		
+	}
+}
+
+.contact-email-address {
+	width: 200px;
+}
+
+.contact-container form {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
 }
 
-#contact-text {
-	color: black;
-	text-align: center;
-	padding-top: 150px;
-	margin: 0 auto;
+.contact-container input {
+	margin-bottom: 1rem;
 }
 
-#fa-envelope {
-	font-size: 40px;
-	margin-top: 16px;
-	margin-bottom: 3%px;
+.contact-container textarea {
+	height: 5rem;
+	@media (min-width: $screen-width-sm) {
+	 height: 7rem;		
+	}
 }
 
-.contactIcons {
-	font-size: 40px;
+.contact-form-submit {
+	width: 100px;
+	margin-top: 1rem;
 }
-
-.contactIcons a {
-	color: $black;
-}
-
-
-// #contact h2 {
-	// 	color: $black;
-	// 	padding: 0;
-	// 	margin: 0;
-// }
