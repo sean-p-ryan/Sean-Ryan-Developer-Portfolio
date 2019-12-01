@@ -4,7 +4,7 @@
 // $screen-width-md: 992px;
 // $screen-width-lg: 1200px;
 
-.project-container {
+.project-container, .contact-container {
   padding: 0 1rem;
   margin-bottom: 3rem;
   @media (min-width: $screen-width-sm) {
@@ -84,9 +84,9 @@
   margin-top: 11px;
 }
 
-.project-description {
-  width: 80%;
+.project-description {  
   @media (min-width: $screen-width-sm) {
+    width: 80%;
     width: 200px;
   }
   @media (min-width: $screen-width-lg) {
@@ -94,7 +94,7 @@
   }
 }
 
-.project-button {
+.project-button, .contact-form-submit {
   color: $black;
   font-weight: 700;
   text-transform: uppercase;
