@@ -12,11 +12,44 @@
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
+    @media (min-width: $screen-width-md){
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+}
+
+.headshot-and-intro-text {
+    @media (min-width: $screen-width-md){
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 1085px;
+        padding-left: 4rem;
+        align-items: center;
+    }
 }
 
 .about-intro-text {
     width: 95%;
     padding-left: 1rem;
+    @media (min-width: $screen-width-sm){
+        margin-left: 4rem;
+        width: 85%;
+    }
+    @media (min-width: $screen-width-md){
+        margin-left: 0;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: $screen-width-md){
+    .about-intro-text p {
+        margin: 0;
+    }
 }
 
 .expertise {
@@ -26,6 +59,9 @@
 .expertise h3 {
     margin: 2rem auto 0.5rem auto;
     text-align: center;
+    @media(min-width: $screen-width-md){
+        margin-top: 5rem;
+    }
 }
 
 .expertise p {
@@ -34,14 +70,20 @@
 }
 
 .skill-box-container {
-    width: 100%;        
+    width: 100%;  
+    @media (min-width: $screen-width-md){
+        display: flex;
+        flex-direction: row;
+        max-width: 1085px;
+        margin: 0 auto;
+    }      
 }
 
 .skill-box-header {
     text-align: center;
 }
 
-.fa-code, .fa-server {
+.fa-code, .fa-server, .fa-terminal {
     color: $blue-lpc;
     margin-top: 1rem;
     padding-top: 0.2rem;
@@ -59,7 +101,11 @@
 }
 
 .skill-box h4 {
-    margin-top: 0.3rem;
+    margin: 0.7rem auto 1rem auto;    
+    width: max-content;
+    @media(min-width: $screen-width-md){
+        font-size: 18px;
+    }
 }
 
 .skill-row {
