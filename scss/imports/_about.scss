@@ -36,6 +36,7 @@
     @media (min-width: $screen-width-sm){
         margin-left: 4rem;
         width: 85%;
+        padding-left: 2.5rem;
     }
     @media (min-width: $screen-width-md){
         margin-left: 0;
@@ -74,7 +75,7 @@
     @media (min-width: $screen-width-md){
         display: flex;
         flex-direction: row;
-        max-width: 1085px;
+        max-width: 900px;
         margin: 0 auto;
     }      
 }
