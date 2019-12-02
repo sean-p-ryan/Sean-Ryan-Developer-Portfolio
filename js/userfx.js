@@ -1,7 +1,8 @@
 //selects "Sean Ryan" text in  and "Projects" in nav bar
-let seanRyan = document.querySelector("#sean-ryan");
-let projects = document.querySelector("#projects");
+let projects = document.querySelector(".projects-selector");
 let navItems = document.querySelectorAll(".nav-item");
+let about = document.querySelector(".about-selector")
+let contact = document.querySelector(".contact-selector")
 
 //selects navbar
 let navBar = document.querySelector(".navbar-wrapper");
@@ -19,21 +20,34 @@ let scrollPos = pageYOffset;
 // Track if nav is full screen
 let fullScreenNav = false;
 
-//remove blue underline from "projects"
-const removeUnderlineFromProjects = () => {
-    projects.classList.remove("text-highlight-blue-li");
-};
+// Remove blue underline from all nav items 
+const removeBlueUnderline = () => {
+    navItems.forEach(item => {
+        item.classList.remove("text-highlight-blue-li");    
+    })
+}
 
 // Add blue underline to "projects"
 const addUnderlineToProjects = () => {
     projects.classList.add("text-highlight-blue-li");
 };
 
-// add gray background to nav on scroll
+// Add blue underline to "about"
+const addUnderlineToAbout = () => {
+    about.classList.add("text-highlight-blue-li");
+};
+
+// Add blue underline to "Contact"
+const addUnderlineToContact = () => {
+    contact.classList.add("text-highlight-blue-li");
+};
+
+// Add gray background to nav on scroll
 const addBlackNavBackground = () => {
     navBar.classList.add("nav-background-black");
 }
 
+// Removes black background from nav bar
 const removeBlackNavBackground = () => {
     navBar.classList.remove("nav-background-black");
 }
@@ -66,12 +80,13 @@ const makeNavBarTextBlack = () => {
 document.addEventListener(
     "click",
     function(e) {
-        console.log(e.target.tagName);
+        console.log(fullScreenNav);
         if (e.target.closest(".custom-nav-toggle")) {
             mobileNavToggle();
-        } else if (window.innerWidth < 992 && (e.target.matches("#projects") || (e.target.matches("#sean-ryan") && fullScreenNav))) {
+        } else if (window.innerWidth < 992) {
+            console.log('in remove nav toggle listener')
             mobileNavToggle();
-        } else if (e.target.matches("#projects")) {
+        } else if (e.target.matches(".projects-selector")) {
             addUnderlineToProjects();
             navBar.classList.add("nav-background-gray");
         } else if (e.target.matches("#sean-ryan")) {
@@ -85,11 +100,18 @@ window.addEventListener("scroll", function(e) {
     scrollPos = pageYOffset;
     addBlackNavBackground();
     makeNavBarTextWhite();
-    if (window.innerWidth > 992 && scrollPos > 770) {
+    if (window.innerWidth > 992 && scrollPos > 764 && scrollPos <= 1652) {
+        removeBlueUnderline();
+        addUnderlineToAbout();
+    } else if (window.innerWidth > 992 && scrollPos >= 1653 && scrollPos <= 3199) {
+        removeBlueUnderline();
         addUnderlineToProjects();
-    } else if (window.innerWidth > 992 && scrollPos > 0 && scrollPos <= 770) {
-        removeUnderlineFromProjects();
+    } else if (window.innerWidth > 992 && scrollPos >= 3200) {
+        console.log("hey")
+        removeBlueUnderline();
+        addUnderlineToContact();
     } else if (window.innerWidth > 992 && scrollPos === 0) {
+        removeBlueUnderline();
         removeBlackNavBackground();
         makeNavBarTextBlack();
     }
