@@ -121,7 +121,7 @@ window.addEventListener("scroll", function(e) {
 // Typewriter effect 
 document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
-    var dataText = [ "Hey! I'm Sean.", "I'm a full-stack developer", "who lives and codes in NYC.", "Check out my work,", "and feel free to reach out."];
+    var dataText = [ "Hey! I'm Sean.", "I'm a front-end developer", "who lives and codes in NYC.", "Check out my work,", "and feel free to reach out."];
     
     // type one text in the typwriter
     // keeps calling itself until the text is finished
