@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme",
   "dependencies": {
-    "node-sass": "^4.11.0",
     "start": "webpack-dev-server"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2"
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "node-sass": "^4.13.1"
   }
 }
