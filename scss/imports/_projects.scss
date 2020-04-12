@@ -1,9 +1,3 @@
-// $screen-width-xxs: 374px;
-// $screen-width-xs: 414px;
-// $screen-width-sm: 768px;
-// $screen-width-md: 992px;
-// $screen-width-lg: 1200px;
-
 .project-container, .contact-container {
   padding: 0 1rem;
   margin-bottom: 3rem;
@@ -28,8 +22,8 @@
   background-image: url("../images/pickipedia-11242019.png");
 }
 
-.rgb {
-    background-image: url("../images/RGB-color-picker.png")
+.lpc-portfolio {
+  background-image: url("../images/lpc-design-portfolio.png");
 }
 
 .image-and-description {
@@ -96,6 +90,10 @@
   @media (min-width: $screen-width-lg) {
     width: 270px;
   }
+}
+
+.project-description p {
+  padding-right: 10px;
 }
 
 .project-button, .contact-form-submit {
