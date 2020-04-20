@@ -1,6 +1,5 @@
-BREAKPOINTS: 
+## Sean Ryan Developer Porrtfolio
+A site about my work, background, technical and personal interests. Hosted at www.seanpryan.dev.
 
-xs: <= 768px
-sm: >= 768px
-md: >= 992px
-lg: >= 1200px
+### To run locally
+After cloning and CD'ing into the repo, copy the path to `index.html` into a browser window to run the project on your local file system. 
