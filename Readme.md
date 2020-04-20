@@ -1,4 +1,4 @@
-## Sean Ryan Developer Porrtfolio
+## Sean Ryan Developer Portfolio
 A site about my work, background, technical and personal interests. Hosted at www.seanpryan.dev.
 
 ### To run locally
