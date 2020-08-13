@@ -46,17 +46,17 @@ a {
     color: $black-lpc;
 }
 
-.section-title {    
+.section-title {
     color: black;
-    font-style: bold;    
+    font-style: bold;
     font-size: 2rem;
     border-bottom: 5px solid $blue-lpc;
     width: max-content;
 }
 
-.left-wrapper {    
+.left-wrapper {
     margin-left: 1rem;
-    @media (min-width: $screen-width-sm){
+    @media (min-width: $screen-width-sm) {
         margin-left: 4rem;
     }
 }

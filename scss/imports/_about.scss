@@ -3,16 +3,15 @@
 // $screen-width-sm: 768px;
 // $screen-width-md: 992px;
 // $screen-width-lg: 1200px;
-
 .headshot {
-    background-image: url('../images/spr-old-headshot.jpg');    
+    background-image: url('../images/spr-new-photo.png');
     background-size: cover;
     border: 1px solid black;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
-    @media (min-width: $screen-width-md){
+    @media (min-width: $screen-width-md) {
         width: 200px;
         height: 200px;
         margin: 0;
@@ -20,7 +19,7 @@
 }
 
 .headshot-and-intro-text {
-    @media (min-width: $screen-width-md){
+    @media (min-width: $screen-width-md) {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
@@ -33,12 +32,12 @@
 .about-intro-text {
     width: 95%;
     padding-left: 1rem;
-    @media (min-width: $screen-width-sm){
+    @media (min-width: $screen-width-sm) {
         margin-left: 4rem;
         width: 85%;
         padding-left: 2.5rem;
     }
-    @media (min-width: $screen-width-md){
+    @media (min-width: $screen-width-md) {
         margin-left: 0;
         width: 70%;
         display: flex;
@@ -47,7 +46,7 @@
     }
 }
 
-@media (min-width: $screen-width-md){
+@media (min-width: $screen-width-md) {
     .about-intro-text p {
         margin: 0;
     }
@@ -60,7 +59,7 @@
 .expertise h3 {
     margin: 2rem auto 0.5rem auto;
     text-align: center;
-    @media(min-width: $screen-width-md){
+    @media(min-width: $screen-width-md) {
         margin-top: 5rem;
     }
 }
@@ -71,20 +70,22 @@
 }
 
 .skill-box-container {
-    width: 100%;  
-    @media (min-width: $screen-width-md){
+    width: 100%;
+    @media (min-width: $screen-width-md) {
         display: flex;
         flex-direction: row;
         max-width: 900px;
         margin: 0 auto;
-    }      
+    }
 }
 
 .skill-box-header {
     text-align: center;
 }
 
-.fa-code, .fa-server, .fa-terminal {
+.fa-code,
+.fa-server,
+.fa-terminal {
     color: $blue-lpc;
     margin-top: 1rem;
     padding-top: 0.2rem;
@@ -94,7 +95,7 @@
 .skill-box {
     background: #fff;
     height: auto;
-    width: 250px;    
+    width: 250px;
     margin: 0 auto;
     margin-bottom: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -102,9 +103,9 @@
 }
 
 .skill-box h4 {
-    margin: 0.7rem auto 1rem auto;    
+    margin: 0.7rem auto 1rem auto;
     width: max-content;
-    @media(min-width: $screen-width-md){
+    @media(min-width: $screen-width-md) {
         font-size: 18px;
     }
 }
