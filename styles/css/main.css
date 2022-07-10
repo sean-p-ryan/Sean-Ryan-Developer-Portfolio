@@ -50,7 +50,16 @@ a {
   margin-left: 1rem; }
   @media (min-width: 768px) {
     .left-wrapper {
-      margin-left: 4rem; } }
+      margin: 0 4rem; } }
+
+li {
+  cursor: pointer; }
+
+.invisible {
+  display: none; }
+
+.visible {
+  display: block; }
 
 .main {
   width: 100vw;
@@ -79,13 +88,22 @@ a {
       margin-top: 150px; } }
 
 .headshot {
-  height: 10rem;
-  display: flex; }
+  display: none; }
+  @media (min-width: 992px) {
+    .headshot {
+      height: 10rem;
+      display: flex; }
+      .headshot .headshot-image {
+        height: 10rem;
+        margin: 0 auto;
+        border-radius: 50%; } }
 
-.headshot-image {
-  height: 10rem;
-  margin: 0 auto;
-  border-radius: 50%; }
+.intro-text {
+  padding-left: 1rem;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .intro-text {
+      padding-left: 4rem; } }
 
 #linkedin-icon {
   margin-left: 1rem; }
@@ -126,9 +144,8 @@ a {
 .nav-bar-container a:hover {
   text-decoration: none; }
 
-@media (max-width: 992px) {
-  .nav-bar-container a {
-    color: #fff; } }
+.nav-bar-container a {
+  color: #fff; }
 
 .inner-nav-wrapper {
   width: 100%;
@@ -144,7 +161,6 @@ a {
   transition-duration: 0.5s;
   border: none;
   overflow-x: hidden;
-  position: fixed;
   width: 100%;
   overflow-y: hidden; }
   @media (max-width: 992px) {
@@ -167,6 +183,8 @@ a {
 
 @media (min-width: 992px) {
   .inner-nav-wrapper {
+    background-color: #0B0B0D;
+    color: ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
@@ -174,9 +192,7 @@ a {
     display: flex;
     flex-direction: row; }
   .nav-ul > li {
-    margin-left: 2rem; }
-  .nav-li {
-    height: 100%; } }
+    margin-left: 2rem; } }
 
 .text-highlight-blue-li {
   border-top: 3px solid #2471e0;
@@ -201,7 +217,6 @@ button:focus {
   width: 30px;
   height: 30px;
   border: none;
-  position: fixed;
   right: 1rem;
   top: 0.9rem;
   background: transparent; }
@@ -217,11 +232,13 @@ button:focus {
   background-color: transparent;
   transition: background-color 0.3s; }
 
-.project-container, .contact-container {
+.project-container,
+.contact-container {
   padding: 0 1rem;
   margin-bottom: 3rem; }
   @media (min-width: 768px) {
-    .project-container, .contact-container {
+    .project-container,
+    .contact-container {
       padding: 0 4rem; } }
 
 .think-tank {
@@ -243,7 +260,6 @@ button:focus {
   .image-and-description {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     width: 680px;
     height: 300px;
     justify-content: center;
@@ -305,7 +321,8 @@ button:focus {
 .project-description p {
   padding-right: 10px; }
 
-.project-button, .contact-form-submit {
+.project-button,
+.contact-form-submit {
   color: #222222;
   font-weight: 700;
   text-transform: uppercase;
@@ -316,12 +333,17 @@ button:focus {
   height: 45px;
   margin: 0 0.5rem 0.5rem 0; }
   @media (min-width: 768px) {
-    .project-button, .contact-form-submit {
+    .project-button,
+    .contact-form-submit {
       width: 80px;
       height: 40px; } }
   @media (min-width: 1200px) {
-    .project-button, .contact-form-submit {
+    .project-button,
+    .contact-form-submit {
       width: 110px; } }
+
+.ux {
+  width: 120px; }
 
 .button-container {
   display: flex;
@@ -346,23 +368,17 @@ button:focus {
   .headshot-and-intro-text {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     max-width: 1085px;
-    padding-left: 4rem;
+    padding: 2rem 4rem;
     align-items: center; } }
 
 .about-intro-text {
-  width: 95%;
-  padding-left: 1rem; }
+  width: 95%; }
   @media (min-width: 768px) {
     .about-intro-text {
-      margin-left: 4rem;
-      width: 85%;
-      padding-left: 2.5rem; } }
+      width: 85%; } }
   @media (min-width: 992px) {
     .about-intro-text {
-      margin-left: 0;
-      width: 70%;
       display: flex;
       justify-content: center;
       align-items: center; } }

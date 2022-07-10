@@ -1,122 +1,127 @@
-.project-container, .contact-container {
-  padding: 0 1rem;
-  margin-bottom: 3rem;
-  @media (min-width: $screen-width-sm) {
-    padding: 0 4rem;
-  }
+.project-container,
+.contact-container {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+    @media (min-width: $screen-width-sm) {
+        padding: 0 4rem;
+    }
 }
 
 .think-tank {
-  background-image: url("../images/think-tank-11242019.png");
+    background-image: url("../images/think-tank-11242019.png");
 }
 
 .non-voters {
-  background-image: url("../images/types_of_nonvoters_3.png");
+    background-image: url("../images/types_of_nonvoters_3.png");
 }
 
 .tv-database {
-  background-image: url("../images/ITDB-11242019.png");
+    background-image: url("../images/ITDB-11242019.png");
 }
 
 .pickipedia {
-  background-image: url("../images/pickipedia-11242019.png");
+    background-image: url("../images/pickipedia-11242019.png");
 }
 
 .lpc-portfolio {
-  background-image: url("../images/lpc-design-portfolio.png");
+    background-image: url("../images/lpc-design-portfolio.png");
 }
 
 .image-and-description {
-  @media (min-width: $screen-width-sm) {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 680px;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  @media (min-width: $screen-width-md) {
-    width: 750px;
-    height: 331px;
-  }
-  @media (min-width: $screen-width-lg) {
-    width: 975px;
-    height: 430px;
-  }
+    @media (min-width: $screen-width-sm) {
+        display: flex;
+        flex-direction: row;
+        width: 680px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    @media (min-width: $screen-width-md) {
+        width: 750px;
+        height: 331px;
+    }
+    @media (min-width: $screen-width-lg) {
+        width: 975px;
+        height: 430px;
+    }
 }
 
 .project-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 285px;
-  height: 160px;
-  border: 1px solid $black-lpc;
-  margin-bottom: 0.3rem;
-  @media (min-width: $screen-width-xxs) {
-    width: 335px;
-    height: 188px;
-  }
-  @media (min-width: $screen-width-xs) {
-    width: 375px;
-    height: 211px;
-  }
-  @media (min-width: $screen-width-sm) {
-    margin: 0 auto;
-    width: 430px;
-    height: 242px;
-  }
-  @media (min-width: $screen-width-md) {
-    width: 490px;
-    height: 276px;
-  }
-  @media (min-width: $screen-width-lg) {
-    width: 635px;
-    height: 357px;
-  }
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 285px;
+    height: 160px;
+    border: 1px solid $black-lpc;
+    margin-bottom: 0.3rem;
+    @media (min-width: $screen-width-xxs) {
+        width: 335px;
+        height: 188px;
+    }
+    @media (min-width: $screen-width-xs) {
+        width: 375px;
+        height: 211px;
+    }
+    @media (min-width: $screen-width-sm) {
+        margin: 0 auto;
+        width: 430px;
+        height: 242px;
+    }
+    @media (min-width: $screen-width-md) {
+        width: 490px;
+        height: 276px;
+    }
+    @media (min-width: $screen-width-lg) {
+        width: 635px;
+        height: 357px;
+    }
 }
 
 .project-title {
-  margin-top: 11px;
+    margin-top: 11px;
 }
 
-.project-description {  
-  @media (min-width: $screen-width-sm) {
-    width: 80%;
-    width: 200px;
-  }
-  @media (min-width: $screen-width-lg) {
-    width: 270px;
-  }
+.project-description {
+    @media (min-width: $screen-width-sm) {
+        width: 80%;
+        width: 200px;
+    }
+    @media (min-width: $screen-width-lg) {
+        width: 270px;
+    }
 }
 
 .project-description p {
-  padding-right: 10px;
+    padding-right: 10px;
 }
 
-.project-button, .contact-form-submit {
-  color: $black;
-  font-weight: 700;
-  text-transform: uppercase;
-  background: $white-lpc;
-  border: 1px solid #000000;
-  border-radius: 3px;
-  cursor: pointer;
-  height: 45px;
-  margin: 0 0.5rem 0.5rem 0;
-  @media (min-width: $screen-width-sm) {
-    width: 80px;
-    height: 40px;
-  }
-  @media (min-width: $screen-width-lg) {
-    width: 110px;
-  }
+.project-button,
+.contact-form-submit {
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: $white-lpc;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    margin: 0 0.5rem 0.5rem 0;
+    @media (min-width: $screen-width-sm) {
+        width: 80px;
+        height: 40px;
+    }
+    @media (min-width: $screen-width-lg) {
+        width: 110px;
+    }
+}
+
+.ux {
+    width: 120px;
 }
 
 .button-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }

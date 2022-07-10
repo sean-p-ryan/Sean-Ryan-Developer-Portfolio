@@ -22,24 +22,19 @@
     @media (min-width: $screen-width-md) {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
         max-width: 1085px;
-        padding-left: 4rem;
+        padding: 2rem 4rem;
         align-items: center;
     }
 }
 
 .about-intro-text {
     width: 95%;
-    padding-left: 1rem;
     @media (min-width: $screen-width-sm) {
-        margin-left: 4rem;
+        // margin-left: 4rem;
         width: 85%;
-        padding-left: 2.5rem;
     }
     @media (min-width: $screen-width-md) {
-        margin-left: 0;
-        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
