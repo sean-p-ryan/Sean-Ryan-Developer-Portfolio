@@ -5,9 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sean Ryan</title>
-    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/main.css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <!-- FAVICONS -->
@@ -26,6 +29,7 @@
         gtag("js", new Date());
         gtag("config", "UA-138318303-1");
     </script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -45,59 +49,25 @@
                     </div>
                     <ul class="nav-ul">
                         <li class="mobile-nav nav-li">
-                            <a href="#about" class="nav-item mobile-nav about-selector">About</a
-                >
-              </li>
-              <li class="mobile-nav nav-li">
-                <a
-                  href="#projects"
-                  name="projects"
-                  class="nav-item mobile-nav projects-selector"                  
-                  >Projects</a
-                >
-              </li>
-              <li class="mobile-nav nav-li">
-                <a
-                  href="#contact"
-                  class="nav-item mobile-nav contact-selector"                  
-                  >Contact</a
-                >
-              </li>
-              <li class="mobile-nav nav-li">
-                <a href="./resume.html" class="nav-item mobile-nav"
-                  >Resume
-                </a>
+                            <a href="#projects" name="projects" class="nav-item mobile-nav projects-selector text-highlight-blue-li">Technical
+                                Content</a>
+                        </li>
+                        <li class="mobile-nav nav-li">
+                            <a name="projects" class="nav-item mobile-nav projects-selector">Personal Projects</a>
                         </li>
                     </ul>
                 </div>
                 <div class="nav-toggle-wrapper">
                     <button class="custom-nav-toggle" type="button">
-              <span><i class="fas fa-bars fa-2x"></i></span>
-            </button>
+                        <span><i class="fas fa-bars fa-2x"></i></span>
+                    </button>
                 </div>
             </div>
         </nav>
-        <div class="landing-body">
-            <div class="tagline">
-                <p class="typewriter-text"></p>
-            </div>
-
-            <div class="home-icons">
-                <a href="https://github.com/sean-p-ryan" target="_blank"><i class="fab fa-github" id="homeIconGithub"></i
-          ></a>
-                <a href="https://www.linkedin.com/in/seanryan11/" target="_blank"><i
-              class="fab fa-linkedin"
-              id="linkedin-icon"
-              id="homeIconLinkedIn"
-            ></i
-          ></a>
-            </div>
-        </div>
     </div>
 
     <!-- ABOUT -->
     <div class="left-wrapper" id="about">
-        <h2 class="section-title">ABOUT</h2>
     </div>
     <div class="about">
         <div class="about-container">
@@ -106,132 +76,48 @@
                     <figure class="headshot"></figure>
                     <div class="about-intro-text">
                         <p>
-                            Greetings, kind visitor! My name is Sean Ryan, and I'm a front-end developer with a love for building exciting and useful web applications. While I'm always looking to learn new skills and technologies to push boundaries with what I create, my technical
-                            abilities rest on solid foundational knowledge of the time-honored trio at the core of the web: HTML, CSS and plain JavaScript.
+                            <span class="tagline">TECHNICAL WRITER | WEB DEVELOPER</span>
                             <br />
-                            <br /> My extensive professional background in marketing and communications makes me rather unique among technically-oriented folk. Owing to this experience, I pride myself on being able to speak to humans just as effectively
-                            as I speak to computers.
                             <br />
-                            <br /> When I'm not coding, I'm usually playing guitar or drums in various bands that gig and record in and around New York City.
+                            Greetings, kind visitor! I'm Sean, a technical writer and self-taught web developer who
+                            likes using words to solve problems
+                            between people and technology.
+                            <br />
+                            <br />
+                            I have an extensive professional background in writing and content strategy, and a love of
+                            bringing useful digital products to life. I use this site to highlight examples of both of
+                            these endeavors.
+                            <br />
+                            <br />
+                            I live with my wife in New York City (and sometimes Vermont), play <a target="_blank"
+                                href="https://www.bearsofalaskamusic.com"><span id="bears-link">music</span></a>, and
+                            make a variety of soups when it is cold.
+                        </p>
+                        <p>
+                            <br />
+
+                            <br />
+                            <a target="_blank" href="http://www.github.com/sean-p-ryan"><i
+                                    class="fa-brands fa-2x fa-github"></i></a> <a target="_blank"
+                                href="https://www.linkedin.com/in/seanryan11"><i
+                                    class="fa-brands fa-2x fa-linkedin-in"></i></a>
                         </p>
                     </div>
                 </div>
-                <div class="expertise">
-                    <h3>Skills and Expertise</h3>
-                    <p class="expertise-intro-text">
-                        <em>Technologies I like to work with include: </em>
-                    </p>
-                </div>
-                <div class="skill-box-container">
-                    <div class="skill-box">
-                        <div class="skill-box-header">
-                            <i class="fas fa-code fa-2x"></i>
-                            <h4>Front-End</h4>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">HTML5</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">CSS3</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">JavaScript (ES6)</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">jQuery</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">React</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Sass</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">
-                                Bootstrap
-                                <span class="other-frameworks">(& other CSS frameworks)</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="skill-box">
-                        <div class="skill-box-header">
-                            <i class="fas fa-server fa-2x"></i>
-                            <h4>Server & Back-End</h4>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Node.js</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Express</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">SQL</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Sequelize</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Firebase</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Fetch API</p>
-                        </div>
-                    </div>
-                    <div class="skill-box">
-                        <div class="skill-box-header">
-                            <i class="fas fa-terminal fa-2x"></i>
-                            <h4>Tooling | Testing | Misc.</h4>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Git/Github</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">TDD/BDD</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Jasmine</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Webpack</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Heroku</p>
-                        </div>
-                        <div class="skill-row">
-                            <i class="fas fa-angle-double-right"></i>
-                            <p class="skill-name">Netlify</p>
-                        </div>
-                    </div>
-                </div>
             </div>
+
         </div>
     </div>
     <!-- END ABOUT -->
 
     <!-- PROJECTS -->
-    <div id="projects"></div>
     <div class="left-wrapper">
-        <h2 class="section-title">PROJECTS</h2>
     </div>
     <div class="projects">
+        <div class="section-title">
+            <h2>TECHNICAL CONTENT</h2>
+        </div>
+
         <div class="project-container">
             <div class="image-and-description">
                 <div class="project-image" style="background-image: url('images/types_of_nonvoters_3.png');"></div>
@@ -297,81 +183,29 @@
                         <h3 class="project-title">TV Database</h3>
                         <p>
                             A UI that communicates with
-                            <a class="project-text-link" href="https://developers.themoviedb.org/3/getting-started/introduction">The Movie Database API</a
-                >, built on Node.js and Express
-              </p>
+                            <a class="project-text-link"
+                                href="https://developers.themoviedb.org/3/getting-started/introduction">The Movie
+                                Database API</a>, built on Node.js and Express
+                        </p>
+                    </div>
+                    <div class="button-container" id="rgb-buttons">
+                        <a href="https://aqueous-spire-38692.herokuapp.com/" target="_blank">
+                            <button class="project-button">View project</button></a>
+                        <a href="https://github.com/sean-p-ryan/tv-show-discovery-app" target="_blank">
+                            <button class="project-button">Source Code</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="button-container" id="rgb-buttons">
-              <a
-                href="https://aqueous-spire-38692.herokuapp.com/"
-                target="_blank"
-              >
-                <button class="project-button">View project</button></a
-              >
-              <a
-                href="https://github.com/sean-p-ryan/tv-show-discovery-app"
-                target="_blank"
-              >
-                <button class="project-button">Source Code</button></a
-              >
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- <div class="project-container">
-        <div class="image-and-description">
-          <div class="project-image pickipedia"></div>
-          <div class="project-description">
-            <div class="project-text">
-              <h3 class="project-title">Pickipedia</h3>
-              <p>
-                A Wikipedia-style app for chronicling live American roots music
-                in NYC. Built with Node, Express and EJS
-              </p>
-            </div>
-            <div class="button-container">
-              <a
-                href="https://sean-p--ryan-blocipedia.herokuapp.com/"
-                target="_blank"
-              >
-                <button class="project-button">View project</button></a
-              >
-              <a
-                href="https://github.com/sean-p-ryan/blocipedia-node"
-                target="_blank"
-              >
-                <button class="project-button">Source Code</button></a
-              >
-            </div>
-          </div>
-        </div>
-      </div> -->
-    </div>
-    <!-- END PROJECTS -->
-    <!-- CONTACT -->
-    <div class="left-wrapper" id="contact">
-      <h2 class="section-title">CONTACT</h2>
-    </div>
-    <div class="contact-container">
-      <div class="contact-container-text">
-        <p>I like getting emails from people! Send me one if you'd like.</p>
-      </div>
-      <form action="https://formspree.io/mwkejzbv" method="POST">
-        <input
-          class="contact-email-address"
-          placeholder="Email"
-          type="text"
-          name="_replyto"
-        />
-        <textarea
-          class="contact-text-area"
-          placeholder="Your kind and tender words."
-          name="message"
-        ></textarea>
-        <button class="contact-form-submit" type="submit">Send</button>
-      </form>
-    </div>
-    <!-- END CONTACT -->
-    <script src="js/userfx.js"></script>
-  </body>
+
+        <script src="js/userfx.js"></script>
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <!-- Load our React component. -->
+        <script src="like_button.js"></script>
+
+</body>
+
 </html>

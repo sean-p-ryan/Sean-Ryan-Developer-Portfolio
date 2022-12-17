@@ -1,6 +1,9 @@
 #sean-ryan {
     margin: 0.8rem 0;
-    // color: #fff;
+    color: #fff;
+}
+.nav-li {
+    color: #fff;
 }
 @media (min-width: $screen-width-md) {
     .inner-nav-wrapper {
@@ -48,7 +51,6 @@ button:focus {
     width: 30px;
     height: 30px;
     border: none;
-    position: fixed;
     right: 1rem;
     top: 0.9rem;
     background: transparent;

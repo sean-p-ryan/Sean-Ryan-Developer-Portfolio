@@ -1,6 +1,6 @@
 .project-container, .contact-container {
   padding: 0 1rem;
-  margin-bottom: 3rem;
+  margin: 3rem;
   @media (min-width: $screen-width-sm) {
     padding: 0 4rem;
   }
@@ -25,6 +25,22 @@
 .lpc-portfolio {
   background-image: url("../images/lpc-design-portfolio.png");
 }
+
+.section-title {
+  letter-spacing: 0.2rem;;
+  height: 60px;
+  @media (min-width: $screen-width-sm) {
+    margin: 0 auto;
+    width: 680px;
+  }
+  @media (min-width: $screen-width-md) {
+    width: 750px;
+  }
+  @media (min-width: $screen-width-lg) {
+    width: 975px;
+  }
+}
+
 
 .image-and-description {
   @media (min-width: $screen-width-sm) {

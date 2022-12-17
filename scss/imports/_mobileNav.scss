@@ -9,6 +9,8 @@
 }
 
 .nav-bar-container {
+  background-color:#0B0B0D;
+  color: white;
   h1 {
     font-weight: 1000;
     letter-spacing: 2px;
@@ -43,6 +45,7 @@
 }
 
 .navbar-wrapper {  
+  background-color:#0B0B0D;
   @media (max-width: $screen-width-md){
     background-color:#0B0B0D;
   }
@@ -54,6 +57,7 @@
   position: fixed;
   width: 100%;
   overflow-y: hidden;
+  top: 0;
 }
 
 .nav-toggle-wrapper {

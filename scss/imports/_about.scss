@@ -3,19 +3,38 @@
 // $screen-width-sm: 768px;
 // $screen-width-md: 992px;
 // $screen-width-lg: 1200px;
+.about {
+    margin: 180px 0 100px 0;
+}
+
+#bears-link {
+    color: $blue-lpc;
+}
+
+.tagline {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
 .headshot {
-    background-image: url('../images/spr-new-photo.png');
+    background-image: url('../../images/main-image.jpeg');
     background-size: cover;
     border: 1px solid black;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 0 auto;
+
     @media (min-width: $screen-width-md) {
         width: 200px;
         height: 200px;
         margin: 0;
     }
+}
+
+.fa-brands {
+    padding: 0 1rem;
 }
 
 .headshot-and-intro-text {
@@ -29,14 +48,18 @@
     }
 }
 
+
 .about-intro-text {
     width: 95%;
     padding-left: 1rem;
+    flex-direction: column;
+
     @media (min-width: $screen-width-sm) {
         margin-left: 4rem;
         width: 85%;
         padding-left: 2.5rem;
     }
+
     @media (min-width: $screen-width-md) {
         margin-left: 0;
         width: 70%;
@@ -59,6 +82,7 @@
 .expertise h3 {
     margin: 2rem auto 0.5rem auto;
     text-align: center;
+
     @media(min-width: $screen-width-md) {
         margin-top: 5rem;
     }
@@ -71,6 +95,7 @@
 
 .skill-box-container {
     width: 100%;
+
     @media (min-width: $screen-width-md) {
         display: flex;
         flex-direction: row;
@@ -105,6 +130,7 @@
 .skill-box h4 {
     margin: 0.7rem auto 1rem auto;
     width: max-content;
+
     @media(min-width: $screen-width-md) {
         font-size: 18px;
     }
