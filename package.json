@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "sean-ryan-developer-portfolio",
   "version": "1.0.0",
   "description": "Sean Ryan's developer portfolio",
@@ -28,3 +29,37 @@
   },
   "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme"
 }
+=======
+    "name": "sean-ryan-developer-portfolio",
+    "version": "1.0.0",
+    "description": "Sean Ryan's developer portfolio",
+    "main": "server.js",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "livereload": "^0.9.3",
+        "netlify-lambda": "^2.0.15",
+        "node-sass": "^7.0.1",
+        "path": "^0.12.7",
+        "server": "^1.0.27",
+        "serverless-http": "^3.0.1"
+    },
+    "devDependencies": {
+        "connect-livereload": "^0.6.1",
+        "express": "^4.18.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "scss": "node-sass --watch styles/scss -o styles/css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio.git"
+    },
+    "author": "Sean Ryan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio/issues"
+    },
+    "homepage": "https://github.com/sean-p-ryan/Sean-Ryan-Developer-Portfolio#readme"
+}
+>>>>>>> 916cacb1bd6eda92c2b06e36c1435851c0f101f0

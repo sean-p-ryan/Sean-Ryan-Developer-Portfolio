@@ -57,6 +57,18 @@ a {
 .left-wrapper {
     margin-left: 1rem;
     @media (min-width: $screen-width-sm) {
-        margin-left: 4rem;
+        margin: 0 4rem;
     }
+}
+
+li {
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
 }

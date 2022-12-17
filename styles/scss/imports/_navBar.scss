@@ -5,8 +5,11 @@
 .nav-li {
     color: #fff;
 }
+
 @media (min-width: $screen-width-md) {
     .inner-nav-wrapper {
+        background-color: #0B0B0D;
+        color: ffffff;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -17,9 +20,6 @@
     }
     .nav-ul>li {
         margin-left: 2rem;
-    }
-    .nav-li {
-        height: 100%;
     }
 }
 

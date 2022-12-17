@@ -1,8 +1,5 @@
 //selects "Sean Ryan" text in  and "Projects" in nav bar
-let projects = document.querySelector(".projects-selector");
 let navItems = document.querySelectorAll(".nav-item");
-let about = document.querySelector(".about-selector")
-let contact = document.querySelector(".contact-selector")
 
 //selects navbar
 let navBar = document.querySelector(".navbar-wrapper");

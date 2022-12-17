@@ -22,7 +22,7 @@
     background-size: cover;
     border: 1px solid black;
     width: 150px;
-    height: 150px;
+    height: 151px;
     border-radius: 50%;
     margin: 0 auto;
 
@@ -41,9 +41,8 @@
     @media (min-width: $screen-width-md) {
         display: flex;
         flex-direction: row;
-        margin: 0 auto;
         max-width: 1085px;
-        padding-left: 4rem;
+        padding: 2rem 4rem;
         align-items: center;
     }
 }
@@ -51,18 +50,18 @@
 
 .about-intro-text {
     width: 95%;
+<<<<<<< HEAD:scss/imports/_about.scss
     padding-left: 1rem;
     flex-direction: column;
 
+=======
+>>>>>>> 916cacb1bd6eda92c2b06e36c1435851c0f101f0:styles/scss/imports/_about.scss
     @media (min-width: $screen-width-sm) {
-        margin-left: 4rem;
+        // margin-left: 4rem;
         width: 85%;
-        padding-left: 2.5rem;
     }
 
     @media (min-width: $screen-width-md) {
-        margin-left: 0;
-        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
