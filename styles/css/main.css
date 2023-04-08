@@ -58,6 +58,9 @@ li {
 .invisible {
   display: none; }
 
+a {
+  color: #3F71E0; }
+
 .visible {
   display: block; }
 
@@ -342,6 +345,9 @@ button:focus {
     .contact-form-submit {
       width: 110px; } }
 
+.tech-writing-project-body {
+  display: flex; }
+
 .ux {
   width: 120px; }
 
@@ -380,7 +386,6 @@ button:focus {
   @media (min-width: 992px) {
     .about-intro-text {
       display: flex;
-      justify-content: center;
       align-items: center; } }
 
 @media (min-width: 992px) {
