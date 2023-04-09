@@ -384,7 +384,8 @@ button:focus {
     display: flex;
     flex-direction: row;
     padding: 5rem 4rem;
-    margin: 1em 0; } }
+    margin: 1em 0;
+    align-items: center; } }
 
 .about-intro-text {
   width: 95%; }
