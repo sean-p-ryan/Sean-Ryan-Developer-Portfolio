@@ -9,7 +9,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Anton', sans-serif; }
+  font-family: 'Anton', sans-serif;
+  margin: 0;
+  letter-spacing: 0.1rem; }
 
 h1 {
   letter-spacing: 2px;
@@ -244,6 +246,13 @@ button:focus {
     .contact-container {
       padding: 0 4rem; } }
 
+.tech-writing-project {
+  padding: 1rem;
+  border-radius: 7px;
+  background-color: #fff;
+  margin: 2rem 0;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); }
+
 .think-tank {
   background-image: url("../images/think-tank-11242019.png"); }
 
@@ -374,9 +383,8 @@ button:focus {
   .headshot-and-intro-text {
     display: flex;
     flex-direction: row;
-    max-width: 1085px;
-    padding: 2rem 4rem;
-    align-items: center; } }
+    padding: 5rem 4rem;
+    margin: 1em 0; } }
 
 .about-intro-text {
   width: 95%; }
