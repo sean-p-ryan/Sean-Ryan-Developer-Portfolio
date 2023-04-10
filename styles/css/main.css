@@ -10,7 +10,7 @@ h1,
 h2,
 h3 {
   font-family: 'Anton', sans-serif;
-  margin: 0;
+  margin: 2rem 0;
   letter-spacing: 0.1rem; }
 
 h1 {
@@ -378,6 +378,11 @@ button:focus {
       width: 200px;
       height: 200px;
       margin: 0; } }
+
+.social-badge {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto; }
 
 @media (min-width: 992px) {
   .headshot-and-intro-text {
