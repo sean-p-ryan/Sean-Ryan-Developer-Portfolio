@@ -10,6 +10,8 @@ h1,
 h2,
 h3 {
     font-family: 'Anton', sans-serif;
+    margin: 2rem 0;
+    letter-spacing: 0.1rem;
 }
 
 h1 {
@@ -67,6 +69,12 @@ li {
 
 .invisible {
     display: none;
+}
+
+h3 {}
+
+a {
+    color: $blue-lpc;
 }
 
 .visible {

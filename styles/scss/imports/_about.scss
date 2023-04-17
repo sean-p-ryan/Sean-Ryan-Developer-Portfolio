@@ -33,16 +33,18 @@
     }
 }
 
-.fa-brands {
-    padding: 0 1rem;
+.social-badge {
+    width: 30px;
+    height: 30px;
+    margin: 10px auto;
 }
 
 .headshot-and-intro-text {
     @media (min-width: $screen-width-md) {
         display: flex;
         flex-direction: row;
-        max-width: 1085px;
-        padding: 2rem 4rem;
+        padding: 5rem 4rem;
+        margin: 1em 0;
         align-items: center;
     }
 }
@@ -50,12 +52,6 @@
 
 .about-intro-text {
     width: 95%;
-<<<<<<< HEAD:scss/imports/_about.scss
-    padding-left: 1rem;
-    flex-direction: column;
-
-=======
->>>>>>> 916cacb1bd6eda92c2b06e36c1435851c0f101f0:styles/scss/imports/_about.scss
     @media (min-width: $screen-width-sm) {
         // margin-left: 4rem;
         width: 85%;
@@ -63,7 +59,6 @@
 
     @media (min-width: $screen-width-md) {
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 }

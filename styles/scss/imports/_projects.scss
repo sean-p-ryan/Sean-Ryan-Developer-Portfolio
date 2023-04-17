@@ -7,6 +7,14 @@
     }
 }
 
+.tech-writing-project {
+    padding: 1rem;
+    border-radius: 7px;
+    background-color: #fff;
+    margin: 2rem 0;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
 .think-tank {
     background-image: url("../images/think-tank-11242019.png");
 }
@@ -114,6 +122,10 @@
     @media (min-width: $screen-width-lg) {
         width: 110px;
     }
+}
+
+.tech-writing-project-body {
+    display: flex;
 }
 
 .ux {
