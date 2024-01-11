@@ -9,7 +9,9 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Anton', sans-serif; }
+  font-family: 'Anton', sans-serif;
+  margin: 2rem 0;
+  letter-spacing: 0.1rem; }
 
 h1 {
   letter-spacing: 2px;
@@ -47,10 +49,22 @@ a {
   width: max-content; }
 
 .left-wrapper {
-  margin-left: 1rem; }
+  margin: 0 4rem; }
   @media (min-width: 768px) {
     .left-wrapper {
-      margin-left: 4rem; } }
+      margin: 0 4rem; } }
+
+li {
+  cursor: pointer; }
+
+.invisible {
+  display: none; }
+
+a {
+  color: #3F71E0; }
+
+.visible {
+  display: block; }
 
 .main {
   width: 100vw;
@@ -79,13 +93,22 @@ a {
       margin-top: 150px; } }
 
 .headshot {
-  height: 10rem;
-  display: flex; }
+  display: none; }
+  @media (min-width: 992px) {
+    .headshot {
+      height: 10rem;
+      display: flex; }
+      .headshot .headshot-image {
+        height: 10rem;
+        margin: 0 auto;
+        border-radius: 50%; } }
 
-.headshot-image {
-  height: 10rem;
-  margin: 0 auto;
-  border-radius: 50%; }
+.intro-text {
+  padding-left: 1rem;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .intro-text {
+      padding-left: 4rem; } }
 
 #linkedin-icon {
   margin-left: 1rem; }
@@ -110,25 +133,24 @@ a {
   .nav-ul li {
     margin-top: 3.5rem; } }
 
-.nav-bar-container {
-  background-color: #0B0B0D;
-  color: white; }
-  .nav-bar-container h1 {
-    font-weight: 1000;
-    letter-spacing: 2px;
-    margin-top: 1rem;
-    margin-left: 116px;
-    width: max-content; }
-    @media (min-width: 768px) {
-      .nav-bar-container h1 {
-        font-size: 46px; } }
-  .nav-bar-container h1:hover {
-    text-decoration: none; }
-  .nav-bar-container a:hover {
-    text-decoration: none; }
-  @media (max-width: 992px) {
-    .nav-bar-container a {
-      color: #fff; } }
+.nav-bar-container h1 {
+  font-weight: 1000;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  margin-left: 116px;
+  width: max-content; }
+  @media (min-width: 768px) {
+    .nav-bar-container h1 {
+      font-size: 46px; } }
+
+.nav-bar-container h1:hover {
+  text-decoration: none; }
+
+.nav-bar-container a:hover {
+  text-decoration: none; }
+
+.nav-bar-container a {
+  color: #fff; }
 
 .inner-nav-wrapper {
   width: 100%;
@@ -139,16 +161,13 @@ a {
   background-color: #fff; }
 
 .navbar-wrapper {
-  background-color: #0B0B0D;
   height: 3.5rem;
   transition: height;
   transition-duration: 0.5s;
   border: none;
   overflow-x: hidden;
-  position: fixed;
   width: 100%;
-  overflow-y: hidden;
-  top: 0; }
+  overflow-y: hidden; }
   @media (max-width: 992px) {
     .navbar-wrapper {
       background-color: #0B0B0D; } }
@@ -173,6 +192,8 @@ a {
 
 @media (min-width: 992px) {
   .inner-nav-wrapper {
+    background-color: #0B0B0D;
+    color: ffffff;
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
@@ -180,9 +201,7 @@ a {
     display: flex;
     flex-direction: row; }
   .nav-ul > li {
-    margin-left: 2rem; }
-  .nav-li {
-    height: 100%; } }
+    margin-left: 2rem; } }
 
 .text-highlight-blue-li {
   border-top: 3px solid #2471e0;
@@ -222,12 +241,21 @@ button:focus {
   background-color: transparent;
   transition: background-color 0.3s; }
 
-.project-container, .contact-container {
+.project-container,
+.contact-container {
   padding: 0 1rem;
-  margin: 3rem; }
+  margin-bottom: 3rem; }
   @media (min-width: 768px) {
-    .project-container, .contact-container {
+    .project-container,
+    .contact-container {
       padding: 0 4rem; } }
+
+.tech-writing-project {
+  padding: 1rem;
+  border-radius: 7px;
+  background-color: #fff;
+  margin: 2rem 0;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2); }
 
 .think-tank {
   background-image: url("../images/think-tank-11242019.png"); }
@@ -244,25 +272,10 @@ button:focus {
 .lpc-portfolio {
   background-image: url("../images/lpc-design-portfolio.png"); }
 
-.section-title {
-  letter-spacing: 0.2rem;
-  height: 60px; }
-  @media (min-width: 768px) {
-    .section-title {
-      margin: 0 auto;
-      width: 680px; } }
-  @media (min-width: 992px) {
-    .section-title {
-      width: 750px; } }
-  @media (min-width: 1200px) {
-    .section-title {
-      width: 975px; } }
-
 @media (min-width: 768px) {
   .image-and-description {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     width: 680px;
     height: 300px;
     justify-content: center;
@@ -324,7 +337,8 @@ button:focus {
 .project-description p {
   padding-right: 10px; }
 
-.project-button, .contact-form-submit {
+.project-button,
+.contact-form-submit {
   color: #222222;
   font-weight: 700;
   text-transform: uppercase;
@@ -335,20 +349,25 @@ button:focus {
   height: 45px;
   margin: 0 0.5rem 0.5rem 0; }
   @media (min-width: 768px) {
-    .project-button, .contact-form-submit {
+    .project-button,
+    .contact-form-submit {
       width: 80px;
       height: 40px; } }
   @media (min-width: 1200px) {
-    .project-button, .contact-form-submit {
+    .project-button,
+    .contact-form-submit {
       width: 110px; } }
+
+.tech-writing-project-body {
+  display: flex; }
+
+.ux {
+  width: 120px; }
 
 .button-container {
   display: flex;
   flex-direction: row;
   width: 100%; }
-
-.about {
-  margin: 180px 0 100px 0; }
 
 #bears-link {
   color: #3F71E0; }
@@ -363,7 +382,7 @@ button:focus {
   background-size: cover;
   border: 1px solid black;
   width: 150px;
-  height: 150px;
+  height: 151px;
   border-radius: 50%;
   margin: 0 auto; }
   @media (min-width: 992px) {
@@ -372,33 +391,27 @@ button:focus {
       height: 200px;
       margin: 0; } }
 
-.fa-brands {
-  padding: 0 1rem; }
+.social-badge {
+  width: 30px;
+  height: 30px;
+  margin: 10px auto; }
 
 @media (min-width: 992px) {
   .headshot-and-intro-text {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    max-width: 1085px;
-    padding-left: 4rem;
+    padding: 5rem 4rem;
+    margin: 1em 0;
     align-items: center; } }
 
 .about-intro-text {
-  width: 95%;
-  padding-left: 1rem;
-  flex-direction: column; }
+  width: 95%; }
   @media (min-width: 768px) {
     .about-intro-text {
-      margin-left: 4rem;
-      width: 85%;
-      padding-left: 2.5rem; } }
+      width: 85%; } }
   @media (min-width: 992px) {
     .about-intro-text {
-      margin-left: 0;
-      width: 70%;
       display: flex;
-      justify-content: center;
       align-items: center; } }
 
 @media (min-width: 992px) {
