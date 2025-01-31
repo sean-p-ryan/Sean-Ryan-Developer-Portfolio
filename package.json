@@ -11,15 +11,12 @@
     "node": "^17.4.0",
     "node-sass": "^7.0.1",
     "sass": "^1.49.7",
-    "server": "^1.0.27",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "server": "^1.0.27"
   },
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -rw Styles/scss/main.scss -o Styles/main.css",
+    "scss": "node-sass -rw Styles/scss/main.scss -o styles/main.css",
     "start": "webpack serve --config webpack.config.cjs"
   },
   "repository": {

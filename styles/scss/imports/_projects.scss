@@ -15,6 +15,17 @@
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 
+.content-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
 .think-tank {
     background-image: url("../images/think-tank-11242019.png");
 }
